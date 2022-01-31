@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
 
     Vector2 moveDir;
     Rigidbody2D rb => GetComponent<Rigidbody2D>();
+    Animator anim => GetComponent<Animator>();
     void Start()
     {
         
@@ -31,5 +32,7 @@ public class PlayerMove : MonoBehaviour
         moveDir = new Vector2(moveX, moveY).normalized;
 
         rb.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
+
+        anim.SetFloat("Speed", moveDir.sqrMagnitude);
     }
 }
