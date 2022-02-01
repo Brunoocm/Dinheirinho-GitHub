@@ -24,17 +24,15 @@ public class EnemyMelee : MonoBehaviour
 
     void Damage(Collider2D player)
     {
-        //player.GetComponent<?>().??(damage);
+        //player.GetComponent<PlayerStats>().??(damage);
         time = cooldown;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        /*
-        if(collision.GetComponent<?>() != null && canDamage())
+        if(collision.GetComponent<PlayerStats>() != null && canDamage())
         {
             Damage(collision);
         }
-        */
     }
 }
