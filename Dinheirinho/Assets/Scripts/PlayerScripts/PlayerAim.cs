@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerAim : MonoBehaviour
 {
-
     Animator anim => GetComponent<Animator>();
     void Start()
     {

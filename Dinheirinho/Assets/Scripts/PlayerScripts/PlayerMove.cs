@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float speed;
-
+    private float speed;
 
     Vector2 moveDir;
+    PlayerStats playerStats => GetComponent<PlayerStats>();
     Rigidbody2D rb => GetComponent<Rigidbody2D>();
     Animator anim => GetComponent<Animator>();
     void Start()
