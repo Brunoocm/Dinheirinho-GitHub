@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMelee : MonoBehaviour
 {
-    public int damage;
+    public float damage;
     public float cooldown;
 
     float time;
@@ -24,13 +24,13 @@ public class EnemyMelee : MonoBehaviour
 
     void Damage(Collider2D player)
     {
-        //player.GetComponent<PlayerStats>().??(damage);
+        player.GetComponent<PlayerHealth>().TakeDamage(damage);
         time = cooldown;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.GetComponent<PlayerStats>() != null && canDamage())
+        if(collision.GetComponent<PlayerHealth>() != null && canDamage())
         {
             Damage(collision);
         }

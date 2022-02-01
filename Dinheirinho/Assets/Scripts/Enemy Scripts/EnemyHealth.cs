@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int maxHealth;
+    public float maxHealth;
 
-    int currentHealth;
+    float currentHealth;
 
     void Start()
     {

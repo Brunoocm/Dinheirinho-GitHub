@@ -19,6 +19,7 @@ public class PlayerStats : MonoBehaviour
 
     PlayerAim playerAim => GetComponent<PlayerAim>();
     PlayerMove playerMove => GetComponent<PlayerMove>();
+    PlayerHealth playerHealth => GetComponent<PlayerHealth>();
     void Start()
     {
         UpdateAllStats();
@@ -31,7 +32,7 @@ public class PlayerStats : MonoBehaviour
 
     public void UpdateAllStats()
     {
-
+        playerHealth.UpdateHealth();
         playerMove.UpdateMove();
     }
 }
