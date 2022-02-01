@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ab128212a423d34cac3ca62eb6d284b, type: 3}
-  m_Name: Acordo 1
+  m_Name: BracoCurto
   m_EditorClassIdentifier: 
-  nameAcordo: "Bra\xE7o curto"
+  nameAcordo: "Bra\xE7o Curto"
   health: 0
   maxHealth: 0
-  speed: 1
+  speed: 0
   dano: 0
-  fireRate: 10
-  range: -10
+  fireRate: 2
+  range: -2
   money: 0
