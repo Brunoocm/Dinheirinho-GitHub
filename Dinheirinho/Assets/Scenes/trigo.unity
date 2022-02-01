@@ -229,7 +229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &818913736
 Animator:
   serializedVersion: 3
@@ -437,7 +437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1530552298
 Animator:
   serializedVersion: 3
@@ -469,6 +469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c1c51d4948ae34c989e2138f1d1e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRange: 5
+  fireCooldown: 1
+  firePoint: {fileID: 1530552306}
+  bullet: {fileID: 5844427341287536929, guid: 2a2448a8cb2189540b10cb2dd74c923a, type: 3}
 --- !u!114 &1530552300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,8 +497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09cc0e1e34ca5ce4483c97cdd618ba3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.25
-  stopDistance: 3.5
+  speed: 1.75
+  stopDistance: 3
 --- !u!114 &1530552302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,7 +600,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fad6e951ec3be6845b12db30272bd205, type: 3}
-  m_Color: {r: 0.887321, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.887321, g: 0, b: 0.4627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -637,7 +641,7 @@ GameObject:
   - component: {fileID: 1701913814}
   - component: {fileID: 1701913813}
   - component: {fileID: 1701913812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -820,5 +824,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bddc4c99088757439c49f3952bb8ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  currentHealth: 0

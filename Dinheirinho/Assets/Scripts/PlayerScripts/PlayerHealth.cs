@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float maxHealth;
+    float maxHealth;
     public float currentHealth;
 
     PlayerStats playerStats => GetComponent<PlayerStats>();
