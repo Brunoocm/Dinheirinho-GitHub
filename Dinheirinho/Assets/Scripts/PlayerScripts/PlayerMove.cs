@@ -35,4 +35,9 @@ public class PlayerMove : MonoBehaviour
 
         anim.SetFloat("Speed", moveDir.sqrMagnitude);
     }
+
+    public void UpdateMove()
+    {
+        speed = playerStats.speed;
+    }
 }

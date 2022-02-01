@@ -72,17 +72,5 @@ public class AcordosShop : MonoBehaviour
 
         playerStats.UpdateAllStats();
     }
-    public void FillObjects()
-    {   
-        playerStats.health += acordosScriptableObjects[randomNum].health;
-        playerStats.maxHealth += acordosScriptableObjects[randomNum].maxHealth;
-        playerStats.speed += acordosScriptableObjects[randomNum].speed;
-
-        playerStats.dano += acordosScriptableObjects[randomNum].dano;
-        playerStats.fireRate += acordosScriptableObjects[randomNum].fireRate;
-        playerStats.range += acordosScriptableObjects[randomNum].range;
-
-        playerStats.money += acordosScriptableObjects[randomNum].money;
-    }
 
 }

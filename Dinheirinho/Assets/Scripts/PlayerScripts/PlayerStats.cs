@@ -31,7 +31,7 @@ public class PlayerStats : MonoBehaviour
 
     public void UpdateAllStats()
     {
-        
 
+        playerMove.UpdateMove();
     }
 }
