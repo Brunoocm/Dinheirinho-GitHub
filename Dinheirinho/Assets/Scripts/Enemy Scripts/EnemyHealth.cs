@@ -25,4 +25,9 @@ public class EnemyHealth : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void TakeDamage(float amount)
+    {
+        currentHealth -= amount;
+    }
 }
