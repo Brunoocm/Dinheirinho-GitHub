@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     public float dano;
     public float fireRate;
     public float range;
+    public float bulletSpeed;
 
     [Header("Shop")]
     public float money;
@@ -39,6 +40,7 @@ public class PlayerStats : MonoBehaviour
     {
         playerHealth.UpdateHealth();
         playerMove.UpdateMove();
+        playerAim.UpdatePlayerAim();
         UpdateStatsBar();
     }
 
@@ -46,13 +48,15 @@ public class PlayerStats : MonoBehaviour
     {
         if (speed < 0.5f) speed = 0.5f;
         if (dano < 0.5f) dano = 0.5f;
-        if (fireRate < 0.5f) fireRate = 0.5f;
+        if (fireRate < 0.2f) fireRate = 0.5f;
         if (range < 0.5f) range = 0.5f;
+        if (bulletSpeed < 0.5f) bulletSpeed = 0.5f;
         if (money < 0) money = 0;
 
         statsBar[0].text = "" + speed;
         statsBar[1].text = "" + dano;
         statsBar[2].text = "" + fireRate;
         statsBar[3].text = "" + range;
+        statsBar[4].text = "" + bulletSpeed;
     }
 }

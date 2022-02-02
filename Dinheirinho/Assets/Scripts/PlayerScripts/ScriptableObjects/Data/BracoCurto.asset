@@ -19,4 +19,5 @@ MonoBehaviour:
   dano: 0
   fireRate: 2
   range: -2
+  bulletSpeed: 0
   money: 0

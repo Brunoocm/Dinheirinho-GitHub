@@ -17,6 +17,7 @@ public class AcordosScript : ScriptableObject
     public float dano;
     public float fireRate;
     public float range;
+    public float bulletSpeed;
 
     [Header("Shop")]
     public float money;
