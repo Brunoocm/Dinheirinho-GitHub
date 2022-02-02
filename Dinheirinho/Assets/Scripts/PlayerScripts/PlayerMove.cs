@@ -26,12 +26,24 @@ public class PlayerMove : MonoBehaviour
 
     void Move()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        if (playerStats.blurVision)
+        {
+            float moveX = Input.GetAxis("Horizontal");
+            float moveY = Input.GetAxis("Vertical");
 
-        moveDir = new Vector2(moveX, moveY).normalized;
+            moveDir = new Vector2(moveX, moveY).normalized;
 
-        rb.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
+            rb.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
+        }
+        else
+        {
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
+
+            moveDir = new Vector2(moveX, moveY).normalized;
+
+            rb.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
+        }
 
         anim.SetFloat("Speed", moveDir.sqrMagnitude);
     }

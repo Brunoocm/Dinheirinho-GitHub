@@ -21,5 +21,4 @@ public class AcordosScript : ScriptableObject
 
     [Header("Shop")]
     public float money;
-
 }
