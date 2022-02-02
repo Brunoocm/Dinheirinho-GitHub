@@ -12,7 +12,9 @@ public class PlayerAim : MonoBehaviour
     private float m_fireRate;
 
     public GameObject dinheiroBullet;
-    Vector2 pos;
+    public GameObject attackMelee;
+    public Transform hand;
+    Vector3 pos;
 
     PlayerStats playerstats => GetComponent<PlayerStats>();
     Animator anim => GetComponent<Animator>();
@@ -33,15 +35,20 @@ public class PlayerAim : MonoBehaviour
             Shoot();
             fireRate = m_fireRate;
         }
+        if (Input.GetMouseButton(1) && fireRate <= 0)
+        {
+            AttackMelee();
+            fireRate = m_fireRate;
+        }
     }
 
     void MousePos()
     {
-        Vector2 mouse = Input.mousePosition;
+        Vector3 mouse = Input.mousePosition;
 
-        Vector2 screenPoint = Camera.main.WorldToScreenPoint(transform.localPosition);
+        Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.localPosition);
 
-        Vector2 finalPos = new Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y);
+        Vector3 finalPos = new Vector3(mouse.x - screenPoint.x, mouse.y - screenPoint.y);
         pos = finalPos;
 
         anim.SetFloat("Horizontal", finalPos.x);
@@ -50,11 +57,26 @@ public class PlayerAim : MonoBehaviour
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(dinheiroBullet, transform.position, Quaternion.identity);
+        if (playerstats.money > 0)
+        {
+            playerstats.money -= 1;
+            playerstats.UpdateMoney();
 
-        bullet.GetComponent<Rigidbody2D>().velocity = pos.normalized * bulletSpeed;
-        Destroy(bullet, range);
+            GameObject bullet = Instantiate(dinheiroBullet, transform.position, Quaternion.identity);
 
+            bullet.GetComponent<Rigidbody2D>().velocity = pos.normalized * bulletSpeed;
+            Destroy(bullet, range);
+        }
+
+
+    }
+
+    void AttackMelee()
+    {
+        float angle = Mathf.Atan2(pos.y, pos.x) * Mathf.Rad2Deg;
+        hand.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        GameObject bullet = Instantiate(attackMelee, hand.transform.position, hand.transform.rotation, transform);
+        Destroy(bullet, 0.5f);
     }
 
     public void UpdatePlayerAim()

@@ -29,6 +29,8 @@ public class AcordosShop : MonoBehaviour
     void Update()
     {
         //userString.Contains("stringToSearchFor")
+        textStats[5].text = "" + acordosScriptableObjects[randomNum].money;
+        textStats[6].text = "" + acordosScriptableObjects[randomNum2].money;
     }
     void StartShop()
     {
@@ -51,33 +53,43 @@ public class AcordosShop : MonoBehaviour
     }
     public void ClickButtonNum1()
     {
-        playerStats.health += acordosScriptableObjects[randomNum].health;
-        playerStats.maxHealth += acordosScriptableObjects[randomNum].maxHealth;
-        playerStats.speed += acordosScriptableObjects[randomNum].speed;
+        if (playerStats.money >= acordosScriptableObjects[randomNum].money * (-1))
+        {
+            playerStats.health += acordosScriptableObjects[randomNum].health;
+            playerStats.maxHealth += acordosScriptableObjects[randomNum].maxHealth;
+            playerStats.speed += acordosScriptableObjects[randomNum].speed;
 
-        playerStats.dano += acordosScriptableObjects[randomNum].dano;
-        playerStats.fireRate += acordosScriptableObjects[randomNum].fireRate;
-        playerStats.range += acordosScriptableObjects[randomNum].range;
-        playerStats.bulletSpeed += acordosScriptableObjects[randomNum].bulletSpeed;
+            playerStats.dano += acordosScriptableObjects[randomNum].dano;
+            playerStats.fireRate += acordosScriptableObjects[randomNum].fireRate;
+            playerStats.range += acordosScriptableObjects[randomNum].range;
+            playerStats.bulletSpeed += acordosScriptableObjects[randomNum].bulletSpeed;
 
-        playerStats.money += acordosScriptableObjects[randomNum].money;
+            playerStats.money += acordosScriptableObjects[randomNum].money;
 
-        playerStats.UpdateAllStats();
+            acordo1.SetActive(false);
+
+            playerStats.UpdateAllStats();
+        }
     }
     public void ClickButtonNum2()
     {
-        playerStats.health += acordosScriptableObjects[randomNum2].health;
-        playerStats.maxHealth += acordosScriptableObjects[randomNum2].maxHealth;
-        playerStats.speed += acordosScriptableObjects[randomNum2].speed;
+        if (playerStats.money >= acordosScriptableObjects[randomNum2].money * (-1))
+        {
+            playerStats.health += acordosScriptableObjects[randomNum2].health;
+            playerStats.maxHealth += acordosScriptableObjects[randomNum2].maxHealth;
+            playerStats.speed += acordosScriptableObjects[randomNum2].speed;
 
-        playerStats.dano += acordosScriptableObjects[randomNum2].dano;
-        playerStats.fireRate += acordosScriptableObjects[randomNum2].fireRate;
-        playerStats.range += acordosScriptableObjects[randomNum2].range;
-        playerStats.bulletSpeed += acordosScriptableObjects[randomNum2].bulletSpeed;
+            playerStats.dano += acordosScriptableObjects[randomNum2].dano;
+            playerStats.fireRate += acordosScriptableObjects[randomNum2].fireRate;
+            playerStats.range += acordosScriptableObjects[randomNum2].range;
+            playerStats.bulletSpeed += acordosScriptableObjects[randomNum2].bulletSpeed;
 
-        playerStats.money += acordosScriptableObjects[randomNum2].money;
+            playerStats.money += acordosScriptableObjects[randomNum2].money;
 
-        playerStats.UpdateAllStats();
+            acordo2.SetActive(false);
+
+            playerStats.UpdateAllStats();
+        }
     }
 
     public void ShowStatsChange1()

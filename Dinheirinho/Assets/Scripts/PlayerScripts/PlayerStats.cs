@@ -63,5 +63,11 @@ public class PlayerStats : MonoBehaviour
         statsBar[2].text = "" + fireRate;
         statsBar[3].text = "" + range;
         statsBar[4].text = "" + bulletSpeed;
+        statsBar[5].text = "" + money;
+    }
+    public void UpdateMoney()
+    {
+        statsBar[5].text = "" + money;
+
     }
 }

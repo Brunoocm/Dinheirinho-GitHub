@@ -20,4 +20,4 @@ MonoBehaviour:
   fireRate: 2
   range: -2
   bulletSpeed: 0
-  money: 0
+  money: -10
