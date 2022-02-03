@@ -13,14 +13,12 @@ public class EnemyBullet : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        target = player.transform.position - transform.position;
         Destroy(gameObject, 2f);
 
     }
 
     void Update()
     {
-        transform.Translate(target * speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

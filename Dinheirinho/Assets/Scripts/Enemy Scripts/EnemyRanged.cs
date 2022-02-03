@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class EnemyRanged : MonoBehaviour
 {
+    public float damage;
     public float fireRange;
     public float fireCooldown;
+    public float bulletSpeed;
+    public float accuracy;
     public Transform firePoint;
     public GameObject bullet;
 
@@ -43,7 +46,21 @@ public class EnemyRanged : MonoBehaviour
 
     void Fire()
     {
-        Instantiate(bullet, firePoint.position, Quaternion.identity);
+        //Quaternion spread = new Quaternion(0, 0, firePoint.rotation.z + Random.Range(-1f, 1f) * (1 - accuracy), firePoint.rotation.z);
+        float num = Random.Range(-0.9f, 0.9f);
+        print(num);
+        Vector2 pos = new Vector2(player.transform.position.x - transform.position.x - num, player.transform.position.y - transform.position.y - num);
+
+        GameObject b = Instantiate(bullet, firePoint.position, Quaternion.identity);
+
+        b.GetComponent<EnemyBullet>().damage = damage;
+        b.GetComponent<Rigidbody2D>().velocity = pos.normalized * bulletSpeed;
+
         time = fireCooldown;
+
+    }
+
+    void Shoot()
+    {
     }
 }
