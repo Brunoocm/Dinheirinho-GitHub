@@ -6,6 +6,12 @@ public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth;
 
+    public Material original;
+    public Material effect;
+    SpriteRenderer spriteRenderer => GetComponent<SpriteRenderer>();
+    EnemyMove enemyMove => GetComponent<EnemyMove>();
+    Rigidbody2D rb => GetComponent<Rigidbody2D>();
+
     float currentHealth;
 
     void Start()
@@ -29,5 +35,29 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
+        StartCoroutine(EffectDamage());
+        StartCoroutine(Knockback());
+    }
+
+    IEnumerator EffectDamage()
+    {
+        spriteRenderer.material = effect;
+
+        yield return new WaitForSeconds(0.2f);
+
+        spriteRenderer.material = original;
+
+    }   
+    
+    IEnumerator Knockback()
+    {
+        enemyMove.knockback = true;
+        Vector2 pos = new Vector2(enemyMove.player.transform.position.x, enemyMove.player.transform.position.y);
+        rb.AddForce(new Vector2(-pos.x * 10, -pos.y * 10));
+        yield return new WaitForSeconds(0.2f);
+        rb.AddForce(pos * 10);
+        enemyMove.knockback = false;
+
+
     }
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerAim : MonoBehaviour
 {
-    public float dano;
-    public float fireRate;
-    public float range;
-    public float bulletSpeed;
+    private float dano;
+    private float fireRate;
+    private float range;
+    private float bulletSpeed;
 
     private float m_fireRate;
 
@@ -64,6 +64,7 @@ public class PlayerAim : MonoBehaviour
 
             GameObject bullet = Instantiate(dinheiroBullet, transform.position, Quaternion.identity);
 
+            bullet.GetComponent<BulletDamage>().damage = dano;
             bullet.GetComponent<Rigidbody2D>().velocity = pos.normalized * bulletSpeed;
             Destroy(bullet, range);
         }

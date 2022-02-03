@@ -14,6 +14,8 @@ public class EnemyBullet : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         target = player.transform.position - transform.position;
+        Destroy(gameObject, 0.7f);
+
     }
 
     void Update()

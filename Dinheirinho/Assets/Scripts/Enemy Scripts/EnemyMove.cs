@@ -7,10 +7,13 @@ public class EnemyMove : MonoBehaviour
     public float speed;
     public float stopDistance;
 
+    public bool following = true;
+    public bool knockback;
+
     Animator anim;
     Rigidbody2D rb;
 
-    GameObject player;
+    [HideInInspector] public GameObject player;
     Vector2 moveDir;
 
     void Start()
@@ -23,7 +26,7 @@ public class EnemyMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        FollowPlayer();
+        if(following && !knockback) FollowPlayer();
     }
 
     void FollowPlayer()

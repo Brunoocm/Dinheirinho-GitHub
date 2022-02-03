@@ -353,11 +353,15 @@ MonoBehaviour:
   maxHealth: 100
   speed: 5
   evadeChance: 0
+  reducedDamage: 0
   dano: 10
   fireRate: 1
   range: 0.9
   bulletSpeed: 7
   money: 200
+  fog: 0
+  fogImage: {fileID: 0}
+  blurVision: 0
   statsBar:
   - {fileID: 0}
   - {fileID: 0}
@@ -381,6 +385,8 @@ MonoBehaviour:
   range: 0
   bulletSpeed: 0
   dinheiroBullet: {fileID: 3404108841113749326, guid: 4050f95db526fce4ab452493061c8af2, type: 3}
+  attackMelee: {fileID: 0}
+  hand: {fileID: 0}
 --- !u!114 &571957150
 MonoBehaviour:
   m_ObjectHideFlags: 0
