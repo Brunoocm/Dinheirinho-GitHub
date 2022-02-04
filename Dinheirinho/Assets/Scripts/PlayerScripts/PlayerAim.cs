@@ -13,6 +13,7 @@ public class PlayerAim : MonoBehaviour
 
     public GameObject dinheiroBullet;
     public GameObject attackMelee;
+    public GameObject particleTiro;
     public Transform hand;
     Vector3 pos;
 
@@ -63,9 +64,15 @@ public class PlayerAim : MonoBehaviour
             playerstats.UpdateMoney();
 
             GameObject bullet = Instantiate(dinheiroBullet, transform.position, Quaternion.identity);
-
+      
             bullet.GetComponent<BulletDamage>().damage = dano;
             bullet.GetComponent<Rigidbody2D>().velocity = pos.normalized * bulletSpeed;
+
+            float angle = Mathf.Atan2(pos.y, pos.x) * Mathf.Rad2Deg;
+            hand.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            GameObject particle = Instantiate(particleTiro, hand.transform.position, hand.transform.rotation, transform);
+
+            Destroy(particle, 0.5f);
             Destroy(bullet, range);
         }
 
@@ -77,6 +84,7 @@ public class PlayerAim : MonoBehaviour
         float angle = Mathf.Atan2(pos.y, pos.x) * Mathf.Rad2Deg;
         hand.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         GameObject bullet = Instantiate(attackMelee, hand.transform.position, hand.transform.rotation, transform);
+        bullet.GetComponentInChildren<BulletDamage>().damage = dano/2;
         Destroy(bullet, 0.5f);
     }
 

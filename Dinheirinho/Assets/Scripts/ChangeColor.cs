@@ -5,6 +5,7 @@ using TMPro;
 
 public class ChangeColor : MonoBehaviour
 {
+    public bool invert;
     TextMeshProUGUI textNum => GetComponent<TextMeshProUGUI>();
     private int num;
     void Start()
@@ -19,12 +20,14 @@ public class ChangeColor : MonoBehaviour
 
             if (num < 0)
             {
-                textNum.color = Color.red;
+                if(!invert) textNum.color = Color.red;
+                else textNum.color = Color.green;
             }
             else if (num > 0)
             {
                 textNum.text += "+ ";
-                textNum.color = Color.green;
+                if (!invert) textNum.color = Color.green;
+                else textNum.color = Color.red;
 
             }
         }

@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 2740913857182414427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.43, y: -1.52, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 617715293
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fad6e951ec3be6845b12db30272bd205, type: 3}
-  m_Color: {r: 0.8490566, g: 0.51743114, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 177642fb45bfd0040825ea120130c488, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.66, y: 0.85}
+    oldSize: {x: 3.28, y: 3.28}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -194,10 +194,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  fireRange: 7
+  fireRange: 9
   fireCooldown: 0.5
-  bulletSpeed: 5.7
-  accuracy: 0.22
+  bulletSpeed: 6.06
+  accuracy: 1.45
   firePoint: {fileID: 2740913857182414402}
   bullet: {fileID: 5844427341287536929, guid: 2a2448a8cb2189540b10cb2dd74c923a, type: 3}
 --- !u!95 &2740913857182414426
