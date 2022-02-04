@@ -52,10 +52,11 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator Knockback()
     {
         enemyMove.knockback = true;
-        Vector2 pos = new Vector2(enemyMove.player.transform.position.x, enemyMove.player.transform.position.y);
-        rb.AddForce(new Vector2(-pos.x * 10, -pos.y * 10));
+
+        Vector2 pos = (enemyMove.player.transform.position - this.transform.position).normalized;
+        rb.AddForce(-pos * 100);
         yield return new WaitForSeconds(0.2f);
-        rb.AddForce(pos * 10);
+        rb.AddForce(pos * 100);
         enemyMove.knockback = false;
 
 

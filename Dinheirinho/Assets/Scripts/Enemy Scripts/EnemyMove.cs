@@ -37,7 +37,17 @@ public class EnemyMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(following && !knockback) FollowPlayer();
+        if (following && !knockback)
+        {
+            agent.isStopped = false;
+
+            FollowPlayer();
+        }
+        else
+        {
+            agent.isStopped = true;
+        }
+
     }
 
     void FollowPlayer()
