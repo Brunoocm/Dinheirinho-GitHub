@@ -19,11 +19,8 @@ public class AcordosShop : MonoBehaviour
     {
         maxNum = acordosScriptableObjects.Length;
 
-        acordo1.SetActive(true);
-        acordo2.SetActive(true);
-
-        ExitButton();
-        setRandom();
+        OpenShop();
+ 
     }
 
     void Update()
@@ -41,15 +38,24 @@ public class AcordosShop : MonoBehaviour
     {
         randomNum = Random.Range(0, maxNum);
         randomNum2 = Random.Range(0, maxNum);
-        if(randomNum2 == randomNum)
-        {
-            setRandom();
-        }
-        else
-        {
+        //if(randomNum2 == randomNum)
+        //{
+        //    setRandom();
+        //}
+        //else
+        //{
             StartShop();
-        }
+        //}
 
+    }
+
+    public void OpenShop()
+    {
+        acordo1.SetActive(true);
+        acordo2.SetActive(true);
+
+        ExitButton(); //seta status
+        setRandom();
     }
     public void ClickButtonNum1()
     {

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerAim : MonoBehaviour
 {
-    private float dano;
-    private float fireRate;
-    private float range;
-    private float bulletSpeed;
+    public float dano;
+    public float fireRate;
+    public float range;
+    public float bulletSpeed;
 
-    private float m_fireRate;
+    public float m_fireRate;
 
     public GameObject dinheiroBullet;
     public GameObject attackMelee;
@@ -83,7 +83,7 @@ public class PlayerAim : MonoBehaviour
     public void UpdatePlayerAim()
     {
         dano = playerstats.dano;
-        fireRate = playerstats.fireRate;
+        //fireRate = playerstats.fireRate;
         m_fireRate = playerstats.fireRate;
         range = playerstats.range;
         bulletSpeed = playerstats.bulletSpeed;

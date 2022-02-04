@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ControleSalas : MonoBehaviour
 {
@@ -10,12 +11,16 @@ public class ControleSalas : MonoBehaviour
 
 
     [Header("INIMIGOS")]
+    public bool hasEnemy;
     public GameObject ranged;
     public GameObject melee;
     public GameObject tank;
 
     [Header("PROGRESSÃO")]
     public Level[] levels;
+    public NavMeshSurface2d navMesh;
+    public Animator elevadorEsq;
+    public Animator elevadorDir;
 
 
     [Header("DEBUG")]
@@ -23,28 +28,51 @@ public class ControleSalas : MonoBehaviour
     private Layout currentLayout;
     public List<GameObject> inimigosDisponiveis;//tipos de inimigos que podem ser spawnados no level atual
     private int currentLevelNumber = 0;
+    [HideInInspector] public bool isShop;
 
 
     private void Awake()
     {
-        NextLevel();
+        StartCoroutine(StartGameplay());
+    }
+    private void Start()
+    {
+        navMesh.BuildNavMeshAsync();
     }
 
     private void Update()
     {
         levelAtual = currentLevelNumber;
-        if (Input.GetKeyDown(KeyCode.N)) NextLevel();
+        hasEnemy = FindObjectOfType<EnemyHealth>();
+
+        //if (Input.GetKeyDown(KeyCode.N)) NextLevel();
+
+        if(!hasEnemy && !isShop)
+        {
+            elevadorDir.SetTrigger("Open");
+        }
+        else
+        {
+            elevadorDir.SetTrigger("Close");
+        }
     }
 
     public void NextLevel()
     {
-        currentLevelNumber++;
-        currentLevel = levels[currentLevelNumber - 1];
+        StartCoroutine(StartGameplay()); 
+        //currentLevelNumber++;
+        //currentLevel = levels[currentLevelNumber - 1];
 
-        currentLayout = layouts[Random.Range(0, layouts.Length)];
-        currentLayout.visual.SetActive(true);
+        //currentLayout = layouts[Random.Range(0, layouts.Length)];
+        //currentLayout.visual.SetActive(true);
 
-        SpawnEnemies();
+        //SpawnEnemies();
+    }
+
+    public void BakeNavMesh()
+    {
+        navMesh.BuildNavMeshAsync();
+
     }
 
     private void SpawnEnemies()
@@ -59,6 +87,27 @@ public class ControleSalas : MonoBehaviour
         {
             Instantiate(inimigosDisponiveis[Random.Range(0, inimigosDisponiveis.Count)], spawnpoint.position, spawnpoint.rotation);
         }
+    }
+
+    IEnumerator StartGameplay()
+    {
+        elevadorDir.SetTrigger("Close");
+        currentLevelNumber++;
+        currentLevel = levels[currentLevelNumber - 1];
+
+        if(currentLayout != null)currentLayout.visual.SetActive(false);
+
+        currentLayout = layouts[currentLevelNumber - 1];
+        currentLayout.visual.SetActive(true);
+
+        isShop = false;
+        yield return new WaitForSeconds(1f);
+
+        elevadorEsq.SetTrigger("Open");
+        BakeNavMesh();
+        yield return new WaitForSeconds(2f);
+        
+        SpawnEnemies();
     }
 }
 
