@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletDamage : MonoBehaviour
 {
     public float damage;
+    public bool isMelee;
     public GameObject destroyFx;
 
     void Start()
@@ -30,7 +31,7 @@ public class BulletDamage : MonoBehaviour
         if(other.GetComponent<EnemyHealth>() != null)
         {
             other.GetComponent<EnemyHealth>().TakeDamage(damage);
-            Destroy(gameObject);
+            if(!isMelee) Destroy(gameObject);
         }
     }
 }

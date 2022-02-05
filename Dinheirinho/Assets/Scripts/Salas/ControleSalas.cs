@@ -29,7 +29,9 @@ public class ControleSalas : MonoBehaviour
     private Layout currentLayout;
     public List<GameObject> inimigosDisponiveis;//tipos de inimigos que podem ser spawnados no level atual
     private int currentLevelNumber = 0;
-    [HideInInspector] public bool isShop;
+    [HideInInspector] public bool isShop = true;
+    private bool oneTime;
+    private bool oneTime2;
 
 
     private void Awake()
@@ -48,19 +50,48 @@ public class ControleSalas : MonoBehaviour
 
         //if (Input.GetKeyDown(KeyCode.N)) NextLevel();
 
-        if(!hasEnemy && !isShop)
+        //if(!hasEnemy && !oneTime)
+        //{
+        //    if (!oneTime)
+        //    {
+        //        elevadorDir.SetTrigger("Open");
+        //        FindObjectOfType<AudioManager>().Play("ChegadaElevador");
+        //        oneTime = true;
+        //    }
+        //}
+        //else if(isShop)
+        //{
+        //    elevadorDir.SetTrigger("Close");
+        //}
+        if(hasEnemy && isShop)
         {
-            elevadorDir.SetTrigger("Open");
+
         }
         else
         {
-            elevadorDir.SetTrigger("Close");
+            if (!hasEnemy && !isShop && !oneTime)
+            {
+                elevadorDir.SetTrigger("Open");
+                oneTime = true;
+            }
+            if (!hasEnemy && isShop && oneTime || hasEnemy && !isShop && oneTime)
+            {
+                isShop = false;
+                elevadorDir.SetTrigger("Close");
+                print("1");
+                oneTime = false;
+            }
+        
         }
+ 
+        //if (hasEnemy && isShop) 
     }
 
     public void NextLevel()
     {
+        isShop = true;
         StartCoroutine(StartGameplay()); 
+
         //currentLevelNumber++;
         //currentLevel = levels[currentLevelNumber - 1];
 
@@ -93,7 +124,11 @@ public class ControleSalas : MonoBehaviour
 
     IEnumerator StartGameplay()
     {
+        
         elevadorDir.SetTrigger("Close");
+
+        //FindObjectOfType<AudioManager>().Play("ArCondicionado");
+
         currentLevelNumber++;
         currentLevel = levels[currentLevelNumber - 1];
 
@@ -102,14 +137,14 @@ public class ControleSalas : MonoBehaviour
         currentLayout = layouts[currentLevelNumber - 1];
         currentLayout.visual.SetActive(true);
 
-        isShop = false;
         yield return new WaitForSeconds(1f);
-
         elevadorEsq.SetTrigger("Open");
         BakeNavMesh();
         yield return new WaitForSeconds(2f);
-        
+
         SpawnEnemies();
+        oneTime = false;
+
     }
 }
 

@@ -143,7 +143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  current: {fileID: 0}
+  isMelee: 1
+  destroyFx: {fileID: 0}
 --- !u!1 &8964589557145336176
 GameObject:
   m_ObjectHideFlags: 0

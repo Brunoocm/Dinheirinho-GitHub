@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerAim : MonoBehaviour
 {
-    public float dano;
-    public float fireRate;
-    public float range;
-    public float bulletSpeed;
+    private float dano;
+    private float fireRate;
+    private float range;
+    private float bulletSpeed;
 
-    public float m_fireRate;
+    private float m_fireRate;
 
     public GameObject dinheiroBullet;
     public GameObject attackMelee;
@@ -25,6 +25,8 @@ public class PlayerAim : MonoBehaviour
     {
         m_fireRate = fireRate;
         fireRate = 0;
+
+        
     }
 
     void Update()
@@ -61,6 +63,8 @@ public class PlayerAim : MonoBehaviour
     {
         if (playerstats.money > 0)
         {
+            FindObjectOfType<AudioManager>().Play("AttackRanged");
+
             StartCoroutine(ToggleGun());
 
             playerstats.money -= 1;
@@ -84,6 +88,8 @@ public class PlayerAim : MonoBehaviour
 
     void AttackMelee()
     {
+        FindObjectOfType<AudioManager>().Play("AttackMelee");
+
         float angle = Mathf.Atan2(pos.y, pos.x) * Mathf.Rad2Deg;
         hand.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         GameObject bullet = Instantiate(attackMelee, hand.transform.position, hand.transform.rotation, transform);

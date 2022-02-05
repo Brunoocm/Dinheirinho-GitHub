@@ -212,9 +212,9 @@ MonoBehaviour:
   - name: Level 1
     inimigos:
       ranged: 1
-      melee: 0
-      tank: 1
-      papel: 1
+      melee: 1
+      tank: 0
+      papel: 0
     temContrato: 0
   - name: 'Level 2 '
     inimigos:
@@ -1229,6 +1229,18 @@ MonoBehaviour:
           m_StringArgument: TelaNada
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1429679347}
+        m_TargetAssemblyTypeName: TriggerElevador, Assembly-CSharp
+        m_MethodName: PlayRoomAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &398989827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2003,6 +2015,133 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invert: 1
+--- !u!1 &695377659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695377661}
+  - component: {fileID: 695377660}
+  m_Layer: 0
+  m_Name: Musicas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &695377660
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695377659}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 207b4bf1f7c479d458e39ba2288db1de, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.7
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &695377661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695377659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8578244, y: -3.6305163, z: -16.24395}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707672497
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,11 +4378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd5b8e9c811bf0847b23dc9179699d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 0
-  fireRate: 0
-  range: 0
-  bulletSpeed: 0
-  m_fireRate: 0
   dinheiroBullet: {fileID: 3404108841113749326, guid: 4050f95db526fce4ab452493061c8af2, type: 3}
   attackMelee: {fileID: 8964589557145336176, guid: 799fcb79487ebd04699ffc41f56873ba, type: 3}
   particleTiro: {fileID: 4044438687129629496, guid: 1d620506b47023943ada2c9af5f86be6, type: 3}
@@ -4285,7 +4419,7 @@ MonoBehaviour:
   speed: 5
   evadeChance: 0
   reducedDamage: 0
-  dano: 3
+  dano: 31.91
   fireRate: 1
   range: 0.9
   bulletSpeed: 7
@@ -5034,9 +5168,12 @@ MonoBehaviour:
   lojaObj: {fileID: 633049356}
   controleSalas: {fileID: 123129919}
   acordosShop: {fileID: 436632578}
-  elevadorDir: {fileID: 1654085558}
+  elevadorDir: {fileID: 1429679345}
   transicao: {fileID: 1912288214}
   pos: {fileID: 1707293128}
+  audioSource: {fileID: 695377660}
+  trilhaCombate: {fileID: 8300000, guid: 207b4bf1f7c479d458e39ba2288db1de, type: 3}
+  trilhaLoja: {fileID: 8300000, guid: ccf2b8e902033184697625125465ba00, type: 3}
 --- !u!61 &1429679348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5682,6 +5819,92 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5875807, y: 3.3871374}
   m_EdgeRadius: 0
+--- !u!1 &1665043934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1665043936}
+  - component: {fileID: 1665043935}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1665043935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665043934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c643f3c2128882b46b874062bb92efa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: AttackRanged
+    clip: {fileID: 8300000, guid: 9896970c818f71744a433487b4b5c37a, type: 3}
+    volume: 0.209
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AttackMelee
+    clip: {fileID: 8300000, guid: b100b226b3e43ed40af529816aff9759, type: 3}
+    volume: 0.094
+    pitch: 1.39
+    loop: 0
+    source: {fileID: 0}
+  - name: AcordoAceito
+    clip: {fileID: 8300000, guid: 309de479a4a574446b20ec1e70ae8b99, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DanoLevado
+    clip: {fileID: 8300000, guid: d4776010108e0374c881c9820374c29f, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ArCondicionado
+    clip: {fileID: 8300000, guid: bea59212c0d97c04dab5ae92d6d11ca3, type: 3}
+    volume: 0.172
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: ElevadorMovendo
+    clip: {fileID: 8300000, guid: 74bc3e10f3174f74d89046ca6c81ee02, type: 3}
+    volume: 0
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ChegadaElevador
+    clip: {fileID: 8300000, guid: db31ccfda3ef50345bd99262f2ad794b, type: 3}
+    volume: 0.133
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &1665043936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665043934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6180854, y: -0.43633392, z: -12.70873}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1707293128
 GameObject:
   m_ObjectHideFlags: 0

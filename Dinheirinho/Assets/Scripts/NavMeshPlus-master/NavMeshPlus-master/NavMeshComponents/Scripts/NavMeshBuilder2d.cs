@@ -142,7 +142,7 @@ namespace UnityEngine.AI
                     }
                 }
             }
-            if (!builder.hideEditorLogs) Debug.Log("Sources " + sources.Count);
+            //if (!builder.hideEditorLogs) Debug.Log("Sources " + sources.Count);
         }
 
         private static void CollectSources(List<NavMeshBuildSource> sources, SpriteRenderer sprite, int area, NavMeshBuilder2dWrapper builder)
