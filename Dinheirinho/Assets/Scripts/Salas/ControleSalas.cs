@@ -15,6 +15,7 @@ public class ControleSalas : MonoBehaviour
     public GameObject ranged;
     public GameObject melee;
     public GameObject tank;
+    public GameObject papel;
 
     [Header("PROGRESSÃO")]
     public Level[] levels;
@@ -82,6 +83,7 @@ public class ControleSalas : MonoBehaviour
         if (currentLevel.inimigos.melee) inimigosDisponiveis.Add(melee);
         if (currentLevel.inimigos.ranged) inimigosDisponiveis.Add(ranged);
         if (currentLevel.inimigos.tank) inimigosDisponiveis.Add(tank);
+        if (currentLevel.inimigos.papel) inimigosDisponiveis.Add(papel);
 
         foreach (Transform spawnpoint in currentLayout.spawnpoints)
         {
@@ -126,4 +128,5 @@ public class Inimigos
     public bool ranged;
     public bool melee;
     public bool tank;
+    public bool papel;
 }

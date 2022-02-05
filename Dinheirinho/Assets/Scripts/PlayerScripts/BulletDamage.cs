@@ -5,15 +5,24 @@ using UnityEngine;
 public class BulletDamage : MonoBehaviour
 {
     public float damage;
-    public GameObject current;
+    public GameObject destroyFx;
+
     void Start()
     {
-        
+        //
     }
 
     void Update()
     {
-        
+        //
+    }
+
+    private void OnDestroy()
+    {
+        if(destroyFx != null)
+        {
+            Instantiate(destroyFx, transform.position, transform.rotation);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -21,7 +30,7 @@ public class BulletDamage : MonoBehaviour
         if(other.GetComponent<EnemyHealth>() != null)
         {
             other.GetComponent<EnemyHealth>().TakeDamage(damage);
-            Destroy(current);
+            Destroy(gameObject);
         }
     }
 }

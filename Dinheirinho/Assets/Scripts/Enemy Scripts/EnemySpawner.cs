@@ -11,7 +11,15 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        if (canSpawn())
+        if (canSpawn() && cooldown != 0)
+        {
+            Spawn();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(cooldown == 0)
         {
             Spawn();
         }

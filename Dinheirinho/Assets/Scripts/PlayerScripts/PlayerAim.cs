@@ -14,6 +14,7 @@ public class PlayerAim : MonoBehaviour
     public GameObject dinheiroBullet;
     public GameObject attackMelee;
     public GameObject particleTiro;
+    public GameObject gun;
     public Transform hand;
     Vector3 pos;
 
@@ -60,6 +61,8 @@ public class PlayerAim : MonoBehaviour
     {
         if (playerstats.money > 0)
         {
+            StartCoroutine(ToggleGun());
+
             playerstats.money -= 1;
             playerstats.UpdateMoney();
 
@@ -86,6 +89,14 @@ public class PlayerAim : MonoBehaviour
         GameObject bullet = Instantiate(attackMelee, hand.transform.position, hand.transform.rotation, transform);
         bullet.GetComponentInChildren<BulletDamage>().damage = dano/2;
         Destroy(bullet, 0.5f);
+        StartCoroutine(ToggleGun());
+    }
+
+    IEnumerator ToggleGun()
+    {
+        gun.SetActive(false);
+        yield return new WaitForSeconds(0.35f);
+        gun.SetActive(true);
     }
 
     public void UpdatePlayerAim()
