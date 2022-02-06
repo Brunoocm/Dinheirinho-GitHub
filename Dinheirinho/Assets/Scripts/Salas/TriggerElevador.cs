@@ -7,6 +7,7 @@ public class TriggerElevador : MonoBehaviour
     public GameObject lojaObj;
     public ControleSalas controleSalas;
     public AcordosShop acordosShop;
+    public ContratosShop contratosShop;
 
     public Animator elevadorDir;
     public Animator transicao;
@@ -55,6 +56,7 @@ public class TriggerElevador : MonoBehaviour
         player.transform.position = pos.transform.position;
         lojaObj.SetActive(true);
         acordosShop.OpenShop();
+        contratosShop.RandomContract();
     }
 
     public void playLojaAudio()

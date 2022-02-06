@@ -28,6 +28,9 @@ public class AcordosShop : MonoBehaviour
         //userString.Contains("stringToSearchFor")
         textStats[5].text = "" + acordosScriptableObjects[randomNum].money;
         textStats[6].text = "" + acordosScriptableObjects[randomNum2].money;
+
+        textStats[7].text = "" + acordosScriptableObjects[randomNum].health;
+        textStats[8].text = "" + acordosScriptableObjects[randomNum2].health;
     }
     void StartShop()
     {
@@ -67,9 +70,9 @@ public class AcordosShop : MonoBehaviour
 
             playerStats.money += acordosScriptableObjects[randomNum].money;
 
-            acordo1.SetActive(false);
-
             playerStats.UpdateAllStats();
+
+            StartCoroutine(desativar1());
         }
     }
     public void ClickButtonNum2()
@@ -87,9 +90,10 @@ public class AcordosShop : MonoBehaviour
 
             playerStats.money += acordosScriptableObjects[randomNum2].money;
 
-            acordo2.SetActive(false);
-
             playerStats.UpdateAllStats();
+
+            StartCoroutine(desativar2());
+
         }
     }
 
@@ -147,5 +151,17 @@ public class AcordosShop : MonoBehaviour
         textStats[2].text = "";
         textStats[3].text = "";
         textStats[4].text = "";
+    }
+
+    public IEnumerator desativar1()
+    {
+        yield return new WaitForSeconds(0.5f);
+        acordo1.SetActive(false);
+
+    }public IEnumerator desativar2()
+    {
+        yield return new WaitForSeconds(0.5f);
+        acordo2.SetActive(false);
+
     }
 }

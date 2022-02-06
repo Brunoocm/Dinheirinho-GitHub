@@ -17,7 +17,7 @@ public class ContratosShop : MonoBehaviour
         RandomContract();
     }
 
-    void RandomContract()
+    public void RandomContract()
     {
         randContract = Random.Range(0, 5);
 
