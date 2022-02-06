@@ -15,9 +15,9 @@ MonoBehaviour:
   nameAcordo: Terceirizar
   health: 0
   maxHealth: 0
-  speed: 0
+  speed: 1
   dano: 2
-  fireRate: 0
+  fireRate: 0.3
   range: 0
   bulletSpeed: 0
-  money: -25
+  money: -20

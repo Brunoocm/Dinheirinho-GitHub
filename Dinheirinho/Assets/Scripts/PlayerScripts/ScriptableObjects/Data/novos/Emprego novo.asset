@@ -15,9 +15,9 @@ MonoBehaviour:
   nameAcordo: Emprego novo
   health: 0
   maxHealth: 0
-  speed: 2
+  speed: 2.5
   dano: 0
   fireRate: 0
-  range: -2
+  range: 3
   bulletSpeed: 0
-  money: -10
+  money: -35

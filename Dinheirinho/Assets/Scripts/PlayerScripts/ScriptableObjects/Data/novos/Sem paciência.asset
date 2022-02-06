@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: "Sem paci\xEAncia"
   m_EditorClassIdentifier: 
   nameAcordo: "Sem paci\xEAncia"
-  health: 0
+  health: -20
   maxHealth: 0
   speed: 0
-  dano: -1
-  fireRate: 0
-  range: 0
+  dano: 5
+  fireRate: -0.3
+  range: 1
   bulletSpeed: 2
-  money: -10
+  money: 0

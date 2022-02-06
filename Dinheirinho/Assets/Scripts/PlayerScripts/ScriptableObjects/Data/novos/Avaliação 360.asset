@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: "Avalia\xE7\xE3o 360"
   m_EditorClassIdentifier: 
   nameAcordo: "Avalia\xE7\xE3o 360"
-  health: 60
-  maxHealth: 60
+  health: 30
+  maxHealth: 30
   speed: 0
   dano: 0
   fireRate: 0
   range: 0
   bulletSpeed: -4
-  money: -10
+  money: -30

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Feriado
   m_EditorClassIdentifier: 
   nameAcordo: Feriado
-  health: 50
-  maxHealth: 50
+  health: 5
+  maxHealth: 5
   speed: 0
-  dano: -2
+  dano: -0.5
   fireRate: 0
   range: 0
   bulletSpeed: 0
-  money: -10
+  money: -15

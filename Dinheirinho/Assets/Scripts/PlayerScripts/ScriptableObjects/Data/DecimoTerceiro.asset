@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: DecimoTerceiro
   m_EditorClassIdentifier: 
   nameAcordo: "D\xE9cimo Terceiro"
-  health: -10
+  health: 0
   maxHealth: 0
   speed: 0
   dano: 0
-  fireRate: -5
+  fireRate: 0
   range: 0
   bulletSpeed: 0
-  money: -10
+  money: 50

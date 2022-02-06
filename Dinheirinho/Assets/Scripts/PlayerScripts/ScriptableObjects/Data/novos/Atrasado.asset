@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Atrasado
   m_EditorClassIdentifier: 
   nameAcordo: Atrasado
-  health: -65
+  health: -10
   maxHealth: 0
   speed: 2
   dano: 0
-  fireRate: -2
+  fireRate: 0.2
   range: 0
   bulletSpeed: 0
   money: 0

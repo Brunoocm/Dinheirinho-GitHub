@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.16f1 (049d6eca3c44) revision 302446'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'en' Physical Memory: 16319 MB
+OS: 'Windows 10 Pro; OS build 18363.1440; Version 1909; 64bit' Language: 'pt' Physical Memory: 14267 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,116 +11,113 @@ C:\Program Files\Unity\Hub\Editor\2020.3.16f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Lucas/Unity/PROJETOS/Game Jams/MageJAM/Dinheirinho-GitHub/Dinheirinho
+D:/Unity/Dinheirinho-GitHub/Dinheirinho
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63030
-Successfully changed project path to: D:/Lucas/Unity/PROJETOS/Game Jams/MageJAM/Dinheirinho-GitHub/Dinheirinho
-D:/Lucas/Unity/PROJETOS/Game Jams/MageJAM/Dinheirinho-GitHub/Dinheirinho
+64164
+Successfully changed project path to: D:/Unity/Dinheirinho-GitHub/Dinheirinho
+D:/Unity/Dinheirinho-GitHub/Dinheirinho
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 60.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.16f1 (049d6eca3c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Lucas/Unity/PROJETOS/Game Jams/MageJAM/Dinheirinho-GitHub/Dinheirinho/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/Dinheirinho-GitHub/Dinheirinho/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Renderer: AMD Radeon(TM) RX Vega 11 Graphics (ID=0x15d8)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   27.21.14.5671
+    VRAM:     7133 MB
+    Driver:   27.20.1034.6
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003172 seconds.
+Registered in 0.002271 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 51.56 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 63.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.692 seconds
+- Completed reload, in  2.351 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2692ms)
-		BeginReloadAssembly (46ms)
+	ReloadAssembly (2351ms)
+		BeginReloadAssembly (66ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (442ms)
-			LoadAssemblies (45ms)
+		EndReloadAssembly (660ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (150ms)
+			SetupTypeCache (232ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (184ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (284ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (18ms)
-				ProcessInitializeOnLoadAttributes (80ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				RefreshPlugins (63ms)
+				BeforeProcessingInitializeOnLoad (23ms)
+				ProcessInitializeOnLoadAttributes (142ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002845 seconds.
+Registered in 0.003853 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 43.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 58.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.949 seconds
+- Completed reload, in  2.295 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2950ms)
-		BeginReloadAssembly (2015ms)
+	ReloadAssembly (2296ms)
+		BeginReloadAssembly (184ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (877ms)
-			LoadAssemblies (1962ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (2034ms)
+			LoadAssemblies (114ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (265ms)
+			SetupTypeCache (401ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (379ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (1290ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (241ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				RefreshPlugins (58ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (1095ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2269 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.3 MB.
-System memory in use after: 105.5 MB.
+Unloading 2270 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.6 MB.
+System memory in use after: 105.8 MB.
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2710.
-Total: 4.583400 ms (FindLiveObjects: 0.339300 ms CreateObjectMapping: 0.069100 ms MarkObjects: 4.055000 ms  DeleteObjects: 0.118100 ms)
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2715.
+Total: 4.800500 ms (FindLiveObjects: 0.438900 ms CreateObjectMapping: 0.175200 ms MarkObjects: 4.141600 ms  DeleteObjects: 0.043000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,785 +131,230 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files
-  artifactKey: Guid(318d718c509594641b65a337a7e1b708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files using Guid(318d718c509594641b65a337a7e1b708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579bc6bf636b5f75beadafef3f4e22ed') in 0.005316 seconds 
-  Import took 0.009434 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 90.962115 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha1.png
-  artifactKey: Guid(65575774ca0dec846b7dc1064e9397cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha1.png using Guid(65575774ca0dec846b7dc1064e9397cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f9bab0d71101baba5c46dd80d0fdbd') in 0.103552 seconds 
-  Import took 0.107485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha3.png
-  artifactKey: Guid(9cb044cc72cc1ce40aa1a17998f21eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha3.png using Guid(9cb044cc72cc1ce40aa1a17998f21eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfc400436005bf9e6ed3f9d1caa0829') in 0.012738 seconds 
-  Import took 0.016161 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha6.png
-  artifactKey: Guid(0cbc5daa5ef63e54db20722e72b874fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha6.png using Guid(0cbc5daa5ef63e54db20722e72b874fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ceb99e3fb94591e118fc07353d17291') in 0.017661 seconds 
-  Import took 0.020928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha4.png
-  artifactKey: Guid(a6e4bbe5d95fbb744a42c599d05b6efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha4.png using Guid(a6e4bbe5d95fbb744a42c599d05b6efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd839a2a11b17612c9b8d5dbfec5bf80c') in 0.012469 seconds 
-  Import took 0.016316 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha2.png
-  artifactKey: Guid(6f4fef0e3d19472449de1802b2fed082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha2.png using Guid(6f4fef0e3d19472449de1802b2fed082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55fb88f61fb52a3fcd965cd11e7f5c8e') in 0.013596 seconds 
-  Import took 0.017809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha5.png
-  artifactKey: Guid(c67a0784765854a42adb7385277b177c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Fumacinha5.png using Guid(c67a0784765854a42adb7385277b177c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb45beb5bbec36a1cf16d4034018358e') in 0.018897 seconds 
-  Import took 0.022859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.829052 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/PC
-  artifactKey: Guid(0c287e8328008e14399a9c83c9a89b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/PC using Guid(0c287e8328008e14399a9c83c9a89b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb89455005be471d0e8463441a5d13b') in 0.004944 seconds 
-  Import took 0.008567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041013 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PC Morto.png
-  artifactKey: Guid(7b00aeb9c43eeaa4ca5a61a2d9b7dd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PC Morto.png using Guid(7b00aeb9c43eeaa4ca5a61a2d9b7dd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53efb3d8baeaba80f3f8b572b6947993') in 0.013239 seconds 
-  Import took 0.017056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano4.png
-  artifactKey: Guid(e7618d05020908f4babe59e378879443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano4.png using Guid(e7618d05020908f4babe59e378879443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace62c5c914f66ba7c13c8ccb523ade4') in 0.011060 seconds 
-  Import took 0.014658 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano2.png
-  artifactKey: Guid(3a6c53e8bb52fae4a85925d05b075f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano2.png using Guid(3a6c53e8bb52fae4a85925d05b075f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5c9ab0125785511016501e8ca9c923') in 0.011773 seconds 
-  Import took 0.015479 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano5.png
-  artifactKey: Guid(5ef9c08f7a288cb4083d2a420f599573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano5.png using Guid(5ef9c08f7a288cb4083d2a420f599573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '073cdd6ce17a6e9c61766b780a9d71bd') in 0.014295 seconds 
-  Import took 0.041037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano1.png
-  artifactKey: Guid(2a800b1980b36364bb7e42d7a25c7ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano1.png using Guid(2a800b1980b36364bb7e42d7a25c7ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43897c3d4614ffb6b088904810a29a35') in 0.012798 seconds 
-  Import took 0.015756 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano3.png
-  artifactKey: Guid(64c1095dc7119c7489ea624094eb642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/PC/PCLevandoDano3.png using Guid(64c1095dc7119c7489ea624094eb642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0749f94697684ff346314315c605fc49') in 0.016866 seconds 
-  Import took 0.020704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.692597 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada
-  artifactKey: Guid(a08c0d08010ab15428e15c7893300d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada using Guid(a08c0d08010ab15428e15c7893300d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '073b61c246f536bb22263d99484aa8e1') in 0.004839 seconds 
-  Import took 0.008565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.053067 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papel Morto.png
-  artifactKey: Guid(a92f902de3280e24da26728d156abece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papel Morto.png using Guid(a92f902de3280e24da26728d156abece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9fa912bf83eb704d3b3f2bfb5e84ba') in 0.012118 seconds 
-  Import took 0.015808 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano3.png
-  artifactKey: Guid(5d28a14d77ce9c647aa2ee7314d4747a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano3.png using Guid(5d28a14d77ce9c647aa2ee7314d4747a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33bd564cae7b38dc5044d8718c199a2f') in 0.011957 seconds 
-  Import took 0.015492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano4.png
-  artifactKey: Guid(1afc3874d61b23a4f9193b21e9325c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano4.png using Guid(1afc3874d61b23a4f9193b21e9325c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c7ee285aaab124a9df8ab56b627949') in 0.016729 seconds 
-  Import took 0.021027 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano1.png
-  artifactKey: Guid(0b65d674c98479146b561decf6285765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano1.png using Guid(0b65d674c98479146b561decf6285765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b028171496f71adc8a141f2098f5f298') in 0.025113 seconds 
-  Import took 0.028507 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano2.png
-  artifactKey: Guid(b0ee4fa02855d7e47b019b883a1cef4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/files/Papelada/Papelada Levando Dano2.png using Guid(b0ee4fa02855d7e47b019b883a1cef4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55dc5cb26827ec668700c65da02a291f') in 0.025073 seconds 
-  Import took 0.028491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 113.489401 seconds.
-  path: Assets/Prefabs/Visual Effects/Money VFX/Money VFX 1.prefab
-  artifactKey: Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Money VFX/Money VFX 1.prefab using Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9894c421fbcbf065ed18bc2da6aba8be') in 0.034971 seconds 
-  Import took 0.038900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.220200 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/Money VFX 1.prefab
-  artifactKey: Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/Money VFX 1.prefab using Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6274404d42d49e52ecc05cd7d3ae9617') in 0.012599 seconds 
-  Import took 0.028969 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.891485 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab
-  artifactKey: Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab using Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18e69d88d9ad5fea3f27bdfa1bf2e39') in 0.013749 seconds 
-  Import took 0.017643 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.722571 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab
-  artifactKey: Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab using Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11477d8490242e68083e52e2bc71a6f1') in 0.004251 seconds 
-  Import took 0.007836 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.769738 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab
-  artifactKey: Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab using Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9bb5517a29d4205dc6813b9a90a83a') in 0.013265 seconds 
-  Import took 0.017000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1070.578506 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab
-  artifactKey: Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab using Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f18805df3c3efe1b0f0eb3ffb0e376') in 0.014082 seconds 
-  Import took 0.018747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab
-  artifactKey: Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx.prefab using Guid(71ca9ff1400504547bb8d95b4c756268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f18805df3c3efe1b0f0eb3ffb0e376') in 0.008072 seconds 
-  Import took 0.011768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.791826 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx 1.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx/Papel vfx 1.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c05e5f069d3a678b973856c3a2453a0') in 0.014904 seconds 
-  Import took 0.019211 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.993664 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx 1.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx 1.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b6f4a1a57317eb5be3d4116121c2c60') in 0.013620 seconds 
-  Import took 0.032662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.127819 seconds.
-  path: Assets/Prefabs/Visual Effects/Fumacinha1.png
-  artifactKey: Guid(bc0e2c702cb5a9f4fa88e2f21611b90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Fumacinha1.png using Guid(bc0e2c702cb5a9f4fa88e2f21611b90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b798bd52e13ccac3bc434c6c669e81d3') in 0.008469 seconds 
-  Import took 0.020005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Prefabs/Visual Effects/Fumacinha2.png
-  artifactKey: Guid(39cd578539a6c094dbac86e130a57124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Fumacinha2.png using Guid(39cd578539a6c094dbac86e130a57124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652f782e86d83378f9a5e84281a4f682') in 0.010161 seconds 
-  Import took 0.013351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Prefabs/Visual Effects/Fumacinha6.png
-  artifactKey: Guid(3fa15909f07ba294fa02cad410d70e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Fumacinha6.png using Guid(3fa15909f07ba294fa02cad410d70e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b1faf471480acbe887e7db2eb4ccbed') in 0.007704 seconds 
-  Import took 0.011295 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Prefabs/Visual Effects/Fumacinha4.png
-  artifactKey: Guid(4d393b82436a14c45898982c4c611c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Fumacinha4.png using Guid(4d393b82436a14c45898982c4c611c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb455045b08fff7c308a7b3437dfae1') in 0.013917 seconds 
-  Import took 0.017560 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Prefabs/Visual Effects/Fumacinha3.png
-  artifactKey: Guid(b0fd8b11e31d499419f579374ef67579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Fumacinha3.png using Guid(b0fd8b11e31d499419f579374ef67579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8ce2d243a484a20574a19db3d145c1') in 0.008057 seconds 
-  Import took 0.011754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Prefabs/Visual Effects/Fumacinha5.png
-  artifactKey: Guid(856092f4e68d55e41ab9b29e264d10d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Fumacinha5.png using Guid(856092f4e68d55e41ab9b29e264d10d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077c1f910d42a20b6ad7027256c6ac09') in 0.014005 seconds 
-  Import took 0.017784 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 86.685365 seconds.
-  path: Assets/Prefabs/Visual Effects/PC
-  artifactKey: Guid(8a12a95b9f70aa94bb15d5aeadb14b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC using Guid(8a12a95b9f70aa94bb15d5aeadb14b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df89a4b5450bff9beccd5f30078ed9a') in 0.002009 seconds 
-  Import took 0.005863 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.501279 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX
-  artifactKey: Guid(8a12a95b9f70aa94bb15d5aeadb14b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX using Guid(8a12a95b9f70aa94bb15d5aeadb14b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f5ccc00b88406510daa22d170553c6e') in 0.004908 seconds 
-  Import took 0.008387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.478182 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel VFX
-  artifactKey: Guid(8d6b8ae5d54adc94c9bf3f4af166ce1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel VFX using Guid(8d6b8ae5d54adc94c9bf3f4af166ce1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86ffb81b48367a6a5c4c4ad81322b6d') in 0.004840 seconds 
-  Import took 0.008232 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.993275 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX 1
-  artifactKey: Guid(af2be1242e4809d4482f075edc4e2231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX 1 using Guid(af2be1242e4809d4482f075edc4e2231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e974b88e87051f95f837049098d1ab46') in 0.004831 seconds 
-  Import took 0.008588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.735464 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX
-  artifactKey: Guid(af2be1242e4809d4482f075edc4e2231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX using Guid(af2be1242e4809d4482f075edc4e2231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4caadf2e8f1e565d3bd2b182280d793') in 0.005434 seconds 
-  Import took 0.008998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.436941 seconds.
-  path: Assets/Prefabs/Visual Effects/Papel vfx 2.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Papel vfx 2.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9fdf8a2048be3db74657321d8f301df') in 0.012241 seconds 
-  Import took 0.016291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.187543 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0534d45d5ae3f2e32a7986d52d6031e2') in 0.012261 seconds 
-  Import took 0.016273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.069989 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19400647c979f40dc8002787f3d3d3ca') in 0.007930 seconds 
-  Import took 0.011873 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.330490 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70405b663324b4bf4b91e386664bc5f8') in 0.012525 seconds 
-  Import took 0.027778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.371236 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '857e8ce6fd421e9cc94150a2c8d8a4b4') in 0.013656 seconds 
-  Import took 0.017494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.817926 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e8206f79476dd3fca4c580b586ea60') in 0.011490 seconds 
-  Import took 0.016155 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.196764 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b474096c6823de821900a5f6dc23809') in 0.013853 seconds 
-  Import took 0.017723 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.819595 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78012addead3e40ded0acf958d93799') in 0.008454 seconds 
-  Import took 0.012469 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.062417 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85adac69f308ba2e3c91567cee8e4ad4') in 0.011368 seconds 
-  Import took 0.015270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.988839 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1831b687d0e2cca7c8216a1145bdc270') in 0.010564 seconds 
-  Import took 0.014506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.643651 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b740a04996e3d74cbf233e661fa081c7') in 0.009319 seconds 
-  Import took 0.013694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.402656 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b8b9edfa9f1070ac3fdec12cb9347c') in 0.010849 seconds 
-  Import took 0.015126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.609028 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ddb75891710ba73dc740dbfe1e6a55') in 0.011507 seconds 
-  Import took 0.015383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.488363 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9a13959a29699c291ebb51ff562586') in 0.014885 seconds 
-  Import took 0.018921 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.047554 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03f3fadd35cd0b195bfd70a263f77c2') in 0.007806 seconds 
-  Import took 0.011763 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.925454 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af95a1be4eaef8ceaffd282045f0b9b') in 0.010325 seconds 
-  Import took 0.014223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.333079 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '346afc3fc290d4ed69dfa88943f4c623') in 0.017560 seconds 
-  Import took 0.021547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.870938 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74847bdc2affa4b2a71d8fe8df5533af') in 0.010424 seconds 
-  Import took 0.014560 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.260844 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6398f0e1c3bdb8f86e3d7f7240eb9cc3') in 0.010165 seconds 
-  Import took 0.014129 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.610495 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05017234d5f6a1553914ae7fe6cbc815') in 0.008416 seconds 
-  Import took 0.012259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.490177 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349dd56e84664a35592cb242d56ec7d7') in 0.013759 seconds 
-  Import took 0.018017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.586657 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6587e4cb783c7eb0b2d1e45a92a0fa27') in 0.008757 seconds 
-  Import took 0.012942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.641470 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8708f1c2e5d1bec39e4addce3024ce8a') in 0.011972 seconds 
-  Import took 0.016239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.584820 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba79a4a238121726d79e40b2c4f324a7') in 0.012145 seconds 
-  Import took 0.016976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.892935 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c002406afb4de8f6ab6e377a94c73745') in 0.011966 seconds 
-  Import took 0.016139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.791576 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124b3791a5c49d16fec340a80e1d51a2') in 0.011239 seconds 
-  Import took 0.015305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.745702 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18f6a0a2e680ea8e8427e2cc8085778') in 0.008690 seconds 
-  Import took 0.012888 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.851171 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87816d3be2175c477223a33a5db2b017') in 0.011747 seconds 
-  Import took 0.016007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.638276 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d416ea9eb10c9da81ad227f9effe35b') in 0.014248 seconds 
-  Import took 0.018226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.261437 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e347a46678dc4b056a2c372eb06e0e7') in 0.008565 seconds 
-  Import took 0.012749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.459689 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0ac12f26e782d68ca6f5051b1676bd') in 0.014749 seconds 
-  Import took 0.018989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.431859 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3cdc02396ca46ddf670a011c8c6f119') in 0.010195 seconds 
-  Import took 0.014252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.256177 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '749352524226b1955af6eb822bb8bbfc') in 0.008593 seconds 
-  Import took 0.012540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.053273 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab
-  artifactKey: Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/PC VFX.prefab using Guid(261fb4ec0b9223349b537affa1927547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb72d5597e90fa4eed8d6cd0d0a02d07') in 0.012163 seconds 
-  Import took 0.016556 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.575567 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978ae72cea5dddfcd08ad0f8d7dda91a') in 0.009297 seconds 
-  Import took 0.013133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.350343 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8f67bafff3dc2fd9a808491c2dc760') in 0.007030 seconds 
-  Import took 0.011228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.849506 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6252de2941bb76aee7a08a3b744d87db') in 0.007760 seconds 
-  Import took 0.012264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.530034 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147d6e5180ed3c6e84a95d6d8e0a9ddf') in 0.007583 seconds 
-  Import took 0.011546 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.419285 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c9abf0946417e3d0eebe575dd417d1') in 0.008492 seconds 
-  Import took 0.012669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.276120 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d62287a351484134531371abe092032') in 0.007533 seconds 
-  Import took 0.011581 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.619171 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9771a4b701758ca329f9e2c9dc70f9d4') in 0.007490 seconds 
-  Import took 0.011657 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.246018 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1796992c5f842c61b902a15c01589a6a') in 0.007858 seconds 
-  Import took 0.023644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.806829 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb16f747098853e3c6c122ad77bc0356') in 0.008423 seconds 
-  Import took 0.012504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.994460 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f309ce13ef3b35c0ba1e254f1fedecd8') in 0.011523 seconds 
-  Import took 0.015168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.416644 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40735f6c0f4335923918015659cbc0a') in 0.012150 seconds 
-  Import took 0.016000 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.055376 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0944bdf5832408c05daca626216d757c') in 0.007560 seconds 
-  Import took 0.011315 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.061439 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7b56f758edfdfbb1a8086c77a31721') in 0.007617 seconds 
-  Import took 0.011504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.169699 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b7827bc9881feaabaa92b3ad3a4ba4') in 0.007304 seconds 
-  Import took 0.011124 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.999348 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1371b9b0d3217eff75b5eb11d34f428c') in 0.008748 seconds 
-  Import took 0.012640 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.000131 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c30fadd7bb954e2a52765108c643f7') in 0.008092 seconds 
-  Import took 0.012515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.360225 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3c62144dbe81835795726868e40b4a') in 0.007207 seconds 
-  Import took 0.011063 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.891619 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ebf0aa15d112ae9d3ee82b3a049ecf') in 0.007559 seconds 
-  Import took 0.011733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2676.010282 seconds.
-  path: Assets/Prefabs/Visual Effects/PC VFX/files
-  artifactKey: Guid(2d796dacaac41334ca7e362bc1b22e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/PC VFX/files using Guid(2d796dacaac41334ca7e362bc1b22e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26aa1d01fc7ab15536404f00da32aaa1') in 0.005107 seconds 
-  Import took 0.009236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.878123 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/files
-  artifactKey: Guid(da4b454cde5b14546a65faeb75a9499e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/files using Guid(da4b454cde5b14546a65faeb75a9499e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858506e5d2cd74469e7359dcba71720e') in 0.002325 seconds 
-  Import took 0.005915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.441467 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc6b7296e68253f1318465465ea4f05') in 0.025139 seconds 
-  Import took 0.029238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.784225 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c958696a3e7a573f6713d72eeed6c19') in 0.012727 seconds 
-  Import took 0.016559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.476766 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82cc0f09804a724fb14d50ab356e9f2e') in 0.007847 seconds 
-  Import took 0.011565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000841 seconds.
-  path: Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab
-  artifactKey: Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Visual Effects/Walk VFX/Walk VFX.prefab using Guid(6256a68be09f6614185b280f71743fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82cc0f09804a724fb14d50ab356e9f2e') in 0.006768 seconds 
-  Import took 0.009773 seconds .
-
+  path: Assets/Scenes/Teste.unity
+  artifactKey: Guid(17f0012d8be6e4940a8a8361bdddbb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Teste.unity using Guid(17f0012d8be6e4940a8a8361bdddbb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc18e8a49ee2c32634c7982370b9cf03') in 0.023193 seconds 
+  Import took 0.027917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Scenes/trigo.unity
+  artifactKey: Guid(738c6a9000909cb489b0dc720711362c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/trigo.unity using Guid(738c6a9000909cb489b0dc720711362c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a06c299b3d0189b84f469bdb6a4552') in 0.010096 seconds 
+  Import took 0.029289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Scenes/JogoPrincipal.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/JogoPrincipal.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736e301cf0f474b3a90fd222c390c8bc') in 0.012601 seconds 
+  Import took 0.023099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.806246 seconds.
+  path: Assets/Scenes/Salas.unity
+  artifactKey: Guid(784e910755e4c3a4c9dda3ca8c996614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Salas.unity using Guid(784e910755e4c3a4c9dda3ca8c996614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015a1a5d1dfa10d88f02cb696da8230c') in 0.015141 seconds 
+  Import took 0.024111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000718 seconds.
+  path: Assets/Scenes/Salas.unity
+  artifactKey: Guid(784e910755e4c3a4c9dda3ca8c996614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Salas.unity using Guid(784e910755e4c3a4c9dda3ca8c996614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015a1a5d1dfa10d88f02cb696da8230c') in 0.005903 seconds 
+  Import took 0.012732 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003750 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.496 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1497ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1251ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (358ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (561ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (414ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2220 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.2 MB.
+System memory in use after: 101.3 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2718.
+Total: 5.030000 ms (FindLiveObjects: 0.379600 ms CreateObjectMapping: 0.073900 ms MarkObjects: 4.545700 ms  DeleteObjects: 0.028100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003319 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.491 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1491ms)
+		BeginReloadAssembly (217ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (1190ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (386ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (484ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (355ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2220 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.2 MB.
+System memory in use after: 101.4 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2721.
+Total: 3.778200 ms (FindLiveObjects: 0.333700 ms CreateObjectMapping: 0.081500 ms MarkObjects: 3.338800 ms  DeleteObjects: 0.022200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003248 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.471 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1472ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1210ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (370ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (519ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (386ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2220 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.2 MB.
+System memory in use after: 101.5 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2724.
+Total: 4.576000 ms (FindLiveObjects: 0.295900 ms CreateObjectMapping: 0.073000 ms MarkObjects: 4.170300 ms  DeleteObjects: 0.034600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 57.6 MB.
+System memory in use after: 57.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2724.
+Total: 5.304500 ms (FindLiveObjects: 0.265500 ms CreateObjectMapping: 0.076000 ms MarkObjects: 4.926700 ms  DeleteObjects: 0.034100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

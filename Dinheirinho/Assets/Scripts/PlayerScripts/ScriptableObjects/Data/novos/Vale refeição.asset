@@ -15,9 +15,9 @@ MonoBehaviour:
   nameAcordo: "Vale refei\xE7\xE3o"
   health: 25
   maxHealth: 25
-  speed: 0
+  speed: -1.5
   dano: 0
-  fireRate: 0
+  fireRate: 0.25
   range: -2
   bulletSpeed: 0
-  money: -10
+  money: -25

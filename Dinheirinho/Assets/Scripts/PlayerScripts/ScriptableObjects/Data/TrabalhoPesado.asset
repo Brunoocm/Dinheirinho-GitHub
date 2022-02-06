@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: TrabalhoPesado
   m_EditorClassIdentifier: 
   nameAcordo: Trabalho Pesado
-  health: 0
-  maxHealth: 10
+  health: 15
+  maxHealth: 15
   speed: -2
-  dano: 0
+  dano: 2
   fireRate: 0
-  range: 0
-  bulletSpeed: 2
+  range: 5
+  bulletSpeed: -2
   money: -10

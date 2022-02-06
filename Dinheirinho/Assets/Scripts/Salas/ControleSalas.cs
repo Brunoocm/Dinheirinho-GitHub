@@ -13,7 +13,7 @@ public class ControleSalas : MonoBehaviour
     [Header("INIMIGOS")]
     public bool hasEnemy;
     public GameObject ranged;
-    public GameObject melee;
+    public GameObject rangedSlow;
     public GameObject tank;
     public GameObject papel;
 
@@ -90,7 +90,7 @@ public class ControleSalas : MonoBehaviour
     {
         inimigosDisponiveis.Clear();
 
-        if (currentLevel.inimigos.melee) inimigosDisponiveis.Add(melee);
+        if (currentLevel.inimigos.rangedSlow) inimigosDisponiveis.Add(rangedSlow);
         if (currentLevel.inimigos.ranged) inimigosDisponiveis.Add(ranged);
         if (currentLevel.inimigos.tank) inimigosDisponiveis.Add(tank);
         if (currentLevel.inimigos.papel) inimigosDisponiveis.Add(papel);
@@ -142,7 +142,7 @@ public class Level
 public class Inimigos
 {
     public bool ranged;
-    public bool melee;
+    public bool rangedSlow;
     public bool tank;
     public bool papel;
 }

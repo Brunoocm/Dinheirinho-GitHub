@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Cafezinho
   m_EditorClassIdentifier: 
   nameAcordo: "Caf\xE9zinho"
-  health: 0
-  maxHealth: -2
-  speed: 2
+  health: -10
+  maxHealth: 5
+  speed: 3
   dano: 0
-  fireRate: 0
+  fireRate: -0.3
   range: 0
   bulletSpeed: 0
   money: -10

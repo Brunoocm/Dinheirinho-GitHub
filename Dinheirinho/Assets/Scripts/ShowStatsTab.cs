@@ -18,7 +18,7 @@ public class ShowStatsTab : MonoBehaviour
     {
         if (loja.activeSelf == true)
         {
-            stats.SetActive(true);
+            anim.SetBool("ativo", true);
         }
         else
         {

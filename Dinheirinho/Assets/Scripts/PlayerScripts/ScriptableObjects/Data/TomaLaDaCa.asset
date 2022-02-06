@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: TomaLaDaCa
   m_EditorClassIdentifier: 
   nameAcordo: "Toma l\xE1 da c\xE1"
-  health: 0
+  health: -15
   maxHealth: 0
   speed: 0
-  dano: 2
+  dano: 1
   fireRate: 0
-  range: 0
-  bulletSpeed: 0
-  money: -10
+  range: 1
+  bulletSpeed: 1
+  money: -15

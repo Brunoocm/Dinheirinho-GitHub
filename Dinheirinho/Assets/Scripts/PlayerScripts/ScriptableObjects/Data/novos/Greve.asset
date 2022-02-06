@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Greve
   m_EditorClassIdentifier: 
   nameAcordo: Greve
-  health: -50
-  maxHealth: -50
+  health: 0
+  maxHealth: 0
   speed: 0
-  dano: -2
+  dano: 3
   fireRate: 0
-  range: -2
+  range: 3
   bulletSpeed: 0
-  money: 250
+  money: -75

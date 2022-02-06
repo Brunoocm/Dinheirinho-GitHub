@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a6e9bef95297a45ba8f4d440552aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 22
   original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   effect: {fileID: 2100000, guid: c5ca320360a013742bd5f9bb9a1bf5ea, type: 2}
   poisionEffect: {r: 0.52156866, g: 1, b: 0.42745098, a: 1}
@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c1c51d4948ae34c989e2138f1d1e53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  fireRange: 5
+  damage: 3
+  fireRange: 6
   fireCooldown: 1.2
   bulletSpeed: 10
   accuracy: 0

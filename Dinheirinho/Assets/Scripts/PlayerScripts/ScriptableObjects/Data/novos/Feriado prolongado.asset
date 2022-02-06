@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Feriado prolongado
   m_EditorClassIdentifier: 
   nameAcordo: Feriado prolongado
-  health: 100
-  maxHealth: 100
+  health: 15
+  maxHealth: 15
   speed: 0
-  dano: -2
+  dano: -1
   fireRate: 0
-  range: -2
+  range: 0
   bulletSpeed: 0
-  money: -10
+  money: -30

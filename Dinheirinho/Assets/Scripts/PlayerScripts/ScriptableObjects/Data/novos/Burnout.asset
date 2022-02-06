@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Burnout
   m_EditorClassIdentifier: 
   nameAcordo: Burnout
-  health: -75
-  maxHealth: -75
+  health: -35
+  maxHealth: 0
   speed: 0
-  dano: 0
+  dano: -1
   fireRate: 0
   range: 0
   bulletSpeed: 0

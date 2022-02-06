@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Fim de expediente
   m_EditorClassIdentifier: 
   nameAcordo: Fim de expediente
-  health: 500
+  health: 100
   maxHealth: -50
   speed: 0
   dano: 0
   fireRate: 0
   range: 0
   bulletSpeed: 0
-  money: -10
+  money: -100

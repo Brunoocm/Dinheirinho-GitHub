@@ -17,7 +17,7 @@ MonoBehaviour:
   maxHealth: 0
   speed: 0
   dano: -1
-  fireRate: -1
+  fireRate: -0.3
   range: 0
   bulletSpeed: 0
-  money: -10
+  money: -20

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Briguento
   m_EditorClassIdentifier: 
   nameAcordo: Briguento
-  health: -50
-  maxHealth: -50
+  health: -20
+  maxHealth: -10
   speed: 0
-  dano: 2
-  fireRate: -2
+  dano: 4
+  fireRate: -0.3
   range: 0
   bulletSpeed: 0
-  money: -10
+  money: 0

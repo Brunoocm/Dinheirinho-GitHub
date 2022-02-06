@@ -15,9 +15,9 @@ MonoBehaviour:
   nameAcordo: Vale transporte
   health: 0
   maxHealth: 0
-  speed: 2
+  speed: 5
   dano: 0
   fireRate: 0
   range: 0
-  bulletSpeed: 0
-  money: -25
+  bulletSpeed: 5
+  money: -35
