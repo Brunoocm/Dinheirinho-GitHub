@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9092191607794208262}
   - component: {fileID: 2558479817648180157}
   m_Layer: 0
-  m_Name: DinheiroBullet
+  m_Name: DinheiroBulletPoision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,7 +136,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   isMelee: 0
-  isPoision: 0
-  isArea: 0
+  isPoision: 1
   destroyFx: {fileID: 7271416238933047701, guid: 15a4149197f649f43b71e587f1768709, type: 3}
-  destroyFxArea: {fileID: 385155012251209212, guid: 1acb7011213e66b42af3d55f86037a99, type: 3}

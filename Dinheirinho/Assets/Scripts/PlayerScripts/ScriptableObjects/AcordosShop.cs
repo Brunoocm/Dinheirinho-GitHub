@@ -38,14 +38,9 @@ public class AcordosShop : MonoBehaviour
     {
         randomNum = Random.Range(0, maxNum);
         randomNum2 = Random.Range(0, maxNum);
-        //if(randomNum2 == randomNum)
-        //{
-        //    setRandom();
-        //}
-        //else
-        //{
-            StartShop();
-        //}
+
+        StartShop();
+
 
     }
 

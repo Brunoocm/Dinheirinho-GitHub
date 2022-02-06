@@ -8,11 +8,13 @@ public class EnemyHealth : MonoBehaviour
 
     public Material original;
     public Material effect;
+    public Color poisionEffect;
     SpriteRenderer spriteRenderer => GetComponent<SpriteRenderer>();
     EnemyMove enemyMove => GetComponent<EnemyMove>();
     Rigidbody2D rb => GetComponent<Rigidbody2D>();
 
-    float currentHealth;
+    private float currentHealth;
+    private bool delay;
 
     void Start()
     {
@@ -38,6 +40,11 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine(EffectDamage());
         StartCoroutine(Knockback());
     }
+    public void TakePoision(float amount)
+    {
+
+        if(!delay) StartCoroutine(Poision(amount));
+    }
 
     IEnumerator EffectDamage()
     {
@@ -58,6 +65,27 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         rb.AddForce(pos * 100);
         enemyMove.knockback = false;
+
+
+    }
+
+    IEnumerator Poision(float amount)
+    {
+        delay = true;
+        spriteRenderer.color = poisionEffect;
+
+        yield return new WaitForSeconds(1f);
+        currentHealth -= amount / 4;
+        StartCoroutine(EffectDamage());
+        yield return new WaitForSeconds(1f);
+        currentHealth -= amount / 4;
+        StartCoroutine(EffectDamage());
+        yield return new WaitForSeconds(1f); 
+        currentHealth -= amount / 4;
+        StartCoroutine(EffectDamage());
+        yield return new WaitForSeconds(0.5f);
+        spriteRenderer.color = Color.white;
+        delay = false;
 
 
     }

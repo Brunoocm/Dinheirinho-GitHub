@@ -48,7 +48,6 @@ public class TriggerElevador : MonoBehaviour
 
     IEnumerator OpenLojaWait()
     {
-        FindObjectOfType<AudioManager>().Play("ChegadaElevador");
         elevadorDir.SetTrigger("Close");
         transicao.SetTrigger("TelaPreta");
         yield return new WaitForSeconds(1f);

@@ -21,10 +21,10 @@ public class PlayerStats : MonoBehaviour
     [Header("Shop")]
     public float money;
 
-    [Header("World")]
-    public bool fog;
-    public GameObject fogImage;
-    public bool blurVision;
+    //[Header("World")]
+    //public bool fog;
+    //public GameObject fogImage;
+    //public bool blurVision;
 
     public TextMeshProUGUI[] statsBar;
 
@@ -38,7 +38,7 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        fogImage.SetActive(fog);
+        //fogImage.SetActive(fog);
         UpdateAllStats();
     }
 
@@ -52,6 +52,8 @@ public class PlayerStats : MonoBehaviour
 
     public void UpdateStatsBar()
     {
+        if (health > maxHealth) health = maxHealth;
+        if (maxHealth < health) maxHealth = health;
         if (speed < 0.5f) speed = 0.5f;
         if (dano < 0.5f) dano = 0.5f;
         if (fireRate < 0.1f) fireRate = 0.1f;
