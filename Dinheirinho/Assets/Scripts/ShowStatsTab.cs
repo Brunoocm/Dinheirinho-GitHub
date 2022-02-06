@@ -6,6 +6,9 @@ public class ShowStatsTab : MonoBehaviour
 {
     public GameObject loja;
     public GameObject stats;
+
+    Animator anim => stats.GetComponent<Animator>();
+
     void Start()
     {
         
@@ -21,15 +24,13 @@ public class ShowStatsTab : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Tab))
             {
-                if (stats.activeSelf)
+                if (anim.GetBool("ativo"))
                 {
-                    stats.SetActive(false); 
-
+                    anim.SetBool("ativo", false);
                 }
-                else if (!stats.activeSelf)
+                else
                 {
-                    stats.SetActive(true);
-
+                    anim.SetBool("ativo", true);
                 }
             }
 
