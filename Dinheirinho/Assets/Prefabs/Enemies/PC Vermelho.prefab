@@ -152,6 +152,7 @@ MonoBehaviour:
   maxHealth: 10
   original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   effect: {fileID: 2100000, guid: c5ca320360a013742bd5f9bb9a1bf5ea, type: 2}
+  poisionEffect: {r: 0.52156866, g: 1, b: 0.42745098, a: 1}
 --- !u!114 &4494053632405796477
 MonoBehaviour:
   m_ObjectHideFlags: 0

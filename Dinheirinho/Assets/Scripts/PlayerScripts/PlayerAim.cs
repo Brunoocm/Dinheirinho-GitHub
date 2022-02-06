@@ -11,6 +11,8 @@ public class PlayerAim : MonoBehaviour
 
     private float m_fireRate;
 
+    public int reduceMoney = 1;
+
     public GameObject dinheiroBullet;
     public GameObject attackMelee;
     public GameObject particleTiro;
@@ -67,7 +69,7 @@ public class PlayerAim : MonoBehaviour
 
             StartCoroutine(ToggleGun());
 
-            playerstats.money -= 1;
+            playerstats.money -= reduceMoney;
             playerstats.UpdateMoney();
 
             GameObject bullet = Instantiate(dinheiroBullet, transform.position, Quaternion.identity);

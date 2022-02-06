@@ -22,6 +22,7 @@ public class ControleSalas : MonoBehaviour
     public NavMeshSurface2d navMesh;
     public Animator elevadorEsq;
     public Animator elevadorDir;
+    public GameObject contratoObj;
 
 
     [Header("DEBUG")]
@@ -48,21 +49,6 @@ public class ControleSalas : MonoBehaviour
         levelAtual = currentLevelNumber;
         hasEnemy = FindObjectOfType<EnemyHealth>();
 
-        //if (Input.GetKeyDown(KeyCode.N)) NextLevel();
-
-        //if(!hasEnemy && !oneTime)
-        //{
-        //    if (!oneTime)
-        //    {
-        //        elevadorDir.SetTrigger("Open");
-        //        FindObjectOfType<AudioManager>().Play("ChegadaElevador");
-        //        oneTime = true;
-        //    }
-        //}
-        //else if(isShop)
-        //{
-        //    elevadorDir.SetTrigger("Close");
-        //}
         if(hasEnemy && isShop)
         {
 
@@ -72,13 +58,13 @@ public class ControleSalas : MonoBehaviour
             if (!hasEnemy && !isShop && !oneTime)
             {
                 elevadorDir.SetTrigger("Open");
+                FindObjectOfType<AudioManager>().Play("ChegadaElevador");
                 oneTime = true;
             }
             if (!hasEnemy && isShop && oneTime || hasEnemy && !isShop && oneTime)
             {
                 isShop = false;
                 elevadorDir.SetTrigger("Close");
-                print("1");
                 oneTime = false;
             }
         
@@ -90,15 +76,8 @@ public class ControleSalas : MonoBehaviour
     public void NextLevel()
     {
         isShop = true;
+
         StartCoroutine(StartGameplay()); 
-
-        //currentLevelNumber++;
-        //currentLevel = levels[currentLevelNumber - 1];
-
-        //currentLayout = layouts[Random.Range(0, layouts.Length)];
-        //currentLayout.visual.SetActive(true);
-
-        //SpawnEnemies();
     }
 
     public void BakeNavMesh()
@@ -115,6 +94,8 @@ public class ControleSalas : MonoBehaviour
         if (currentLevel.inimigos.ranged) inimigosDisponiveis.Add(ranged);
         if (currentLevel.inimigos.tank) inimigosDisponiveis.Add(tank);
         if (currentLevel.inimigos.papel) inimigosDisponiveis.Add(papel);
+        if (currentLevel.temContrato) contratoObj.SetActive(true);
+        if (!currentLevel.temContrato) contratoObj.SetActive(false);
 
         foreach (Transform spawnpoint in currentLayout.spawnpoints)
         {
