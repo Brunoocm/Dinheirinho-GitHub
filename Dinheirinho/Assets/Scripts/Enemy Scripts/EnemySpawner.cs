@@ -17,14 +17,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
-    {
-        if(cooldown == 0)
-        {
-            Spawn();
-        }
-    }
-
     bool canSpawn()
     {
         if(time <= 0)
@@ -38,7 +30,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    void Spawn()
+    public void Spawn()
     {
         Instantiate(toSpawn, transform.position, Quaternion.identity);
         time = cooldown;

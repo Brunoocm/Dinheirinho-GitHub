@@ -13,6 +13,8 @@ public class EnemyHealth : MonoBehaviour
     EnemyMove enemyMove => GetComponent<EnemyMove>();
     Rigidbody2D rb => GetComponent<Rigidbody2D>();
 
+    EnemySpawner es => GetComponent<EnemySpawner>();
+
     private float currentHealth;
     private bool delay;
 
@@ -31,6 +33,11 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        if(es != null)
+        {
+            es.Spawn();
+        }
+
         Destroy(gameObject);
     }
 

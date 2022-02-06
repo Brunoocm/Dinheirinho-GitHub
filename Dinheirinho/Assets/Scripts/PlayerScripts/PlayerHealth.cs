@@ -15,6 +15,9 @@ public class PlayerHealth : MonoBehaviour
     private float currentHealth;
     private float vulnerable;
 
+    public bool canHeal;
+    public bool extraLife;
+
     PlayerStats playerStats => GetComponent<PlayerStats>();
     SpriteRenderer spriteRenderer => GetComponent<SpriteRenderer>();
     Color col;
@@ -42,6 +45,14 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
+    public void Heal()
+    {
+        if (canHeal)
+        {
+            //
+        }
+    }
+
     public void TakeDamage(float amount)
     {
         if(Random.Range(0, 100) > playerStats.evadeChance && vulnerable <= 0)
@@ -66,7 +77,15 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        if (extraLife)
+        {
+            currentHealth = maxHealth / 2;
+            extraLife = false;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void UpdateHealth()

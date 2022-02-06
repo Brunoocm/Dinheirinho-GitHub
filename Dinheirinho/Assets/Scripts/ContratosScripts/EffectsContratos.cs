@@ -5,34 +5,35 @@ using TMPro;
 public class EffectsContratos : MonoBehaviour
 {
     public PlayerStats playerStats;
-    public bool acabouLuzBool;
-    public bool happyHourBool;
-    public bool viroseBool;
-    public bool rasgandoDinheiroBool;
-    public bool horaExtraBool;
 
-    public SkillLuz acabouLuz;
-    public SkillDrunk skillDrunk;
-    public SkillPoision skillPoision;
-    public SkillDanoArea skillDanoArea;
+    public bool[] boolean;
+
+    public SkillLuz acabouLuz;               // 0
+    public SkillDrunk skillDrunk;            // 1
+    public SkillPoision skillPoision;        // 2
+    public SkillDanoArea skillDanoArea;      // 3
+    public SkillHoraExtra skillHoraExtra;    // 4
+
     void Start()
     {
+        skillHoraExtra.playerHealth.canHeal = true;
+        skillHoraExtra.playerHealth.extraLife = false;
         skillDanoArea.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isArea = false;
         skillPoision.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isPoision = false;
     }
 
     void Update()
     {
-        AcabouLuz();//FEITO
-        HappyHour();//FEITO
+        AcabouLuz(); //FEITO
+        HappyHour(); //FEITO
         Virose(); //FEITO
         RasgandoDinheiro(); //FEITO
-        HoraExtra();
+        HoraExtra(); //FEITO
     }
 
     public void AcabouLuz()
     {
-        if (acabouLuzBool)
+        if (boolean[0])
         {
             acabouLuz.fog.SetActive(true);
             acabouLuz.fog.transform.position = playerStats.transform.position;
@@ -46,7 +47,7 @@ public class EffectsContratos : MonoBehaviour
     }
     public void HappyHour()
     {
-        if (happyHourBool)
+        if (boolean[1])
         {
             playerStats.reducedDamage = 30;
 
@@ -76,14 +77,14 @@ public class EffectsContratos : MonoBehaviour
     } 
     public void Virose()
     {
-        if(viroseBool && !skillPoision.oneTime)
+        if(boolean[2] && !skillPoision.oneTime)
         {
             skillPoision.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isPoision = true;
             playerStats.maxHealth = playerStats.maxHealth / 2;
             skillPoision.oneTime = true;
 
         }
-        else if(!viroseBool)
+        else if(!boolean[2])
         {
             skillPoision.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isPoision = false;
             skillPoision.oneTime = false;
@@ -91,14 +92,14 @@ public class EffectsContratos : MonoBehaviour
     } 
     public void RasgandoDinheiro()
     {
-        if (rasgandoDinheiroBool && !skillDanoArea.oneTime)
+        if (boolean[3] && !skillDanoArea.oneTime)
         {
             skillDanoArea.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isArea = true;
             skillDanoArea.playerAim.reduceMoney = 2;
             skillDanoArea.oneTime = true;
 
         }
-        else if(!rasgandoDinheiroBool)
+        else if(!boolean[3])
         {
             skillDanoArea.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isArea = false;
             skillDanoArea.oneTime = false;
@@ -106,14 +107,23 @@ public class EffectsContratos : MonoBehaviour
     } 
     public void HoraExtra()
     {
-
+        if (boolean[4])
+        {
+            skillHoraExtra.playerHealth.canHeal = false;
+            skillHoraExtra.playerHealth.extraLife = true;
+        }
+        else
+        {
+            skillHoraExtra.playerHealth.canHeal = true;
+            skillHoraExtra.playerHealth.extraLife = false;
+        }
     }
 
     [System.Serializable]
     public class SkillLuz
     {
         public GameObject fog;
-
+        public Sprite sprite;
     }
 
     [System.Serializable]
@@ -123,6 +133,7 @@ public class EffectsContratos : MonoBehaviour
         public float MinSpeed;
         public TextMeshProUGUI texto;
         public float num;
+        public Sprite sprite;
     }
     
     [System.Serializable]
@@ -131,6 +142,7 @@ public class EffectsContratos : MonoBehaviour
         public GameObject normalBullet;
         public PlayerAim playerAim;
         public bool oneTime;
+        public Sprite sprite;
     }
     
     [System.Serializable]
@@ -139,6 +151,13 @@ public class EffectsContratos : MonoBehaviour
         public GameObject normalBullet;
         public PlayerAim playerAim;
         public bool oneTime;
+        public Sprite sprite;
+    }
 
+    [System.Serializable]
+    public class SkillHoraExtra
+    {
+        public PlayerHealth playerHealth;
+        public Sprite sprite;
     }
 }

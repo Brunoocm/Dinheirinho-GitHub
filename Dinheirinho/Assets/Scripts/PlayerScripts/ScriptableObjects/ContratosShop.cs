@@ -1,108 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
 public class ContratosShop : MonoBehaviour
 {
-    public AcordosScript[] acordosScriptableObjects;
-    public PlayerStats playerStats;
-    public TextMeshProUGUI[] textStats;
+    public EffectsContratos effectsContratos;
 
-    public GameObject acordo1;
-    public GameObject acordo2;
+    public GameObject contrato;
 
-    private int randomNum;
-    private int randomNum2;
-    private int maxNum;
-    void Start()
+    int randContract;
+
+    private void Start()
     {
-        maxNum = acordosScriptableObjects.Length;
-
-        OpenShop();
-
+        RandomContract();
     }
 
-    void Update()
+    void RandomContract()
     {
-        //userString.Contains("stringToSearchFor")
-        textStats[5].text = "" + acordosScriptableObjects[randomNum].money;
-    }
-    void StartShop()
-    {
-        acordo1.GetComponentInChildren<TextMeshProUGUI>().text = acordosScriptableObjects[randomNum].nameAcordo;
-        acordo2.GetComponentInChildren<TextMeshProUGUI>().text = acordosScriptableObjects[randomNum2].nameAcordo;
-    }
-    void setRandom()
-    {
-        randomNum = Random.Range(0, maxNum);
-        randomNum2 = Random.Range(0, maxNum);
+        randContract = Random.Range(0, 5);
 
-        StartShop();
-
-
-    }
-
-    public void OpenShop()
-    {
-        acordo1.SetActive(true);
-        acordo2.SetActive(true);
-
-        ExitButton(); //seta status
-        setRandom();
-    }
-    public void ClickButtonNum()
-    {
-        if (playerStats.money >= acordosScriptableObjects[randomNum].money * (-1))
+        if (effectsContratos.boolean[randContract])
         {
-            playerStats.health += acordosScriptableObjects[randomNum].health;
-            playerStats.maxHealth += acordosScriptableObjects[randomNum].maxHealth;
-            playerStats.speed += acordosScriptableObjects[randomNum].speed;
-
-            playerStats.dano += acordosScriptableObjects[randomNum].dano;
-            playerStats.fireRate += acordosScriptableObjects[randomNum].fireRate;
-            playerStats.range += acordosScriptableObjects[randomNum].range;
-            playerStats.bulletSpeed += acordosScriptableObjects[randomNum].bulletSpeed;
-
-            playerStats.money += acordosScriptableObjects[randomNum].money;
-
-            acordo1.SetActive(false);
-
-            playerStats.UpdateAllStats();
+            RandomContract();
+        }
+        else
+        {
+            AssignImage();
         }
     }
-   
 
-    public void ShowStatsChange()
+    void AssignImage()
     {
-        if (acordosScriptableObjects[randomNum].speed != 0)
+        switch (randContract)
         {
-            textStats[0].text = "" + acordosScriptableObjects[randomNum].speed;
-        }
-        if (acordosScriptableObjects[randomNum].dano != 0)
-        {
-            textStats[1].text = "" + acordosScriptableObjects[randomNum].dano;
-        }
-        if (acordosScriptableObjects[randomNum].fireRate != 0)
-        {
-            textStats[2].text = "" + acordosScriptableObjects[randomNum].fireRate;
-        }
-        if (acordosScriptableObjects[randomNum].range != 0)
-        {
-            textStats[3].text = "" + acordosScriptableObjects[randomNum].range;
-        }
-        if (acordosScriptableObjects[randomNum].bulletSpeed != 0)
-        {
-            textStats[4].text = "" + acordosScriptableObjects[randomNum].bulletSpeed;
+            case 0:
+                contrato.GetComponent<Image>().sprite = effectsContratos.acabouLuz.sprite;
+
+                break;
+            case 1:
+                contrato.GetComponent<Image>().sprite = effectsContratos.skillDrunk.sprite;
+
+                break;
+            case 2:
+                contrato.GetComponent<Image>().sprite = effectsContratos.skillPoision.sprite;
+
+                break;
+            case 3:
+                contrato.GetComponent<Image>().sprite = effectsContratos.skillDanoArea.sprite;
+
+                break;
+            case 4:
+                contrato.GetComponent<Image>().sprite = effectsContratos.skillHoraExtra.sprite;
+
+                break;
         }
     }
- 
-    public void ExitButton()
+
+    public void Aceita()
     {
-        textStats[0].text = "";
-        textStats[1].text = "";
-        textStats[2].text = "";
-        textStats[3].text = "";
-        textStats[4].text = "";
+        effectsContratos.boolean[randContract] = true;
+        Invoke("DesligaContrato", 1);
+    }
+
+    void DesligaContrato()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void Recusa()
+    {
+        //
     }
 }
