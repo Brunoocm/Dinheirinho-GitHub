@@ -84,8 +84,10 @@ public class PlayerAim : MonoBehaviour
             Destroy(particle, 0.5f);
             Destroy(bullet, range);
         }
-
-
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("SemBala");
+        }
     }
 
     void AttackMelee()

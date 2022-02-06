@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
     public bool canHeal;
     public bool extraLife;
+    public GameObject evadeVFX;
 
     PlayerStats playerStats => GetComponent<PlayerStats>();
     SpriteRenderer spriteRenderer => GetComponent<SpriteRenderer>();
@@ -45,11 +46,11 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
-    public void Heal()
+    public void Heal(float amount)
     {
         if (canHeal)
         {
-            //
+            currentHealth += amount;
         }
     }
 
@@ -72,6 +73,15 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(Vulnerable());
             playerStats.health = currentHealth;
             vulnerable = 1;
+
+            FindObjectOfType<AudioManager>().Play("DanoLevado");
+        }
+        else if(vulnerable <= 0)
+        {
+            FindObjectOfType<AudioManager>().Play("Evade");
+
+            GameObject evade = Instantiate(evadeVFX, transform.position, Quaternion.identity);
+            evade.transform.parent = transform;
         }
     }
 

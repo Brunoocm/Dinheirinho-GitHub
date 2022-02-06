@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth;
 
+    public GameObject vfx;
     public Material original;
     public Material effect;
     public Color poisionEffect;
@@ -18,8 +19,12 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;
     private bool delay;
 
+    PlayerStats ps;
+
     void Start()
     {
+        ps = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+
         currentHealth = maxHealth;
     }
 
@@ -33,6 +38,18 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        int moneyChance = Random.Range(0, 100);
+
+        if(moneyChance <= 50)
+        {
+            ps.money += 2;
+        }
+
+        if(vfx != null)
+        {
+            Instantiate(vfx, transform.position, Quaternion.identity);
+        }
+
         if(es != null)
         {
             es.Spawn();
