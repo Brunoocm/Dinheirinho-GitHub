@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     public bool canHeal;
     public bool extraLife;
     public GameObject evadeVFX;
+    public GameObject derrota;
 
     PlayerStats playerStats => GetComponent<PlayerStats>();
     SpriteRenderer spriteRenderer => GetComponent<SpriteRenderer>();
@@ -94,6 +95,8 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            derrota.SetActive(true);
+
             Destroy(gameObject);
         }
     }

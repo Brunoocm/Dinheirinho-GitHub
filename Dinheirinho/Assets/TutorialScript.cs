@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-public class MenuScript : MonoBehaviour
+
+public class TutorialScript : MonoBehaviour
 {
+    public UnityEvent evento;
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -14,18 +17,17 @@ public class MenuScript : MonoBehaviour
         
     }
 
+
+
     public void LoadA(string scenename)
     {
         SceneManager.LoadScene(scenename);
     }
-
-    public void QuitGame()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        Application.Quit();
-    }
-
-    public void Reload()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if(other.CompareTag("Player"))
+        {
+            evento.Invoke();
+        }
     }
 }

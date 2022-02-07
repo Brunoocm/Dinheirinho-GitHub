@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameAcordo: Fim de expediente
   health: 100
-  maxHealth: -50
+  maxHealth: 10
   speed: 0
   dano: 0
   fireRate: 0
