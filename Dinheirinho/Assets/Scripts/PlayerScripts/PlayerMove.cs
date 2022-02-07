@@ -50,7 +50,7 @@ public class PlayerMove : MonoBehaviour
         //}
 
         timer -= Time.deltaTime;
-        if(timer <= 0)
+        if(timer <= 0 && (moveX != 0 || moveY != 0))
         {
             GameObject v = Instantiate(vx, new Vector2(transform.position.x, transform.position.y - 0.8f), Quaternion.identity);
             timer = timeraa;

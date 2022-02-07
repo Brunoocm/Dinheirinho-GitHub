@@ -66,7 +66,7 @@ public class PlayerStats : MonoBehaviour
         statsBar[2].text = "" + fireRate.ToString("F1");
         statsBar[3].text = "" + range.ToString("F1");
         statsBar[4].text = "" + bulletSpeed.ToString("F1");
-        statsBar[5].text = "" + money.ToString("F1");
+        statsBar[5].text = "" + money.ToString();
     }
     public void UpdateMoney()
     {
