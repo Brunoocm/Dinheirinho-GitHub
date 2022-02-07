@@ -4326,6 +4326,8 @@ MonoBehaviour:
     texto: {fileID: 591399774}
     num: 0
     sprite: {fileID: 21300000, guid: 3570ac9cc62a2664b8333c8e77944fb6, type: 3}
+    bebado: {fileID: 0}
+    chromatic: {fileID: 0}
   skillPoision:
     normalBullet: {fileID: 3404108841113749326, guid: 4050f95db526fce4ab452493061c8af2, type: 3}
     playerAim: {fileID: 1948068926}
@@ -8552,6 +8554,7 @@ MonoBehaviour:
   canHeal: 0
   extraLife: 0
   evadeVFX: {fileID: 0}
+  derrota: {fileID: 0}
 --- !u!114 &1948068926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8706,6 +8709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41f29139e759e34a836fa7c336ce1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vx: {fileID: 7271416238933047701, guid: 6256a68be09f6614185b280f71743fc4, type: 3}
 --- !u!1 &1958407592
 GameObject:
   m_ObjectHideFlags: 0

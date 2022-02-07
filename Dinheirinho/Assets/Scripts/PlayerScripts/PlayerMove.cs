@@ -10,9 +10,13 @@ public class PlayerMove : MonoBehaviour
     PlayerStats playerStats => GetComponent<PlayerStats>();
     Rigidbody2D rb => GetComponent<Rigidbody2D>();
     Animator anim => GetComponent<Animator>();
+
+    public GameObject vx;
+    private float timer = 0.5f;
+    private float timeraa;
     void Start()
     {
-        
+        timeraa = timer;
     }
 
     void Update()
@@ -45,6 +49,12 @@ public class PlayerMove : MonoBehaviour
             rb.velocity = new Vector2(moveDir.x * speed, moveDir.y * speed);
         //}
 
+        timer -= Time.deltaTime;
+        if(timer <= 0)
+        {
+            GameObject v = Instantiate(vx, new Vector2(transform.position.x, transform.position.y - 0.8f), Quaternion.identity);
+            timer = timeraa;
+        }
         anim.SetFloat("Speed", moveDir.sqrMagnitude);
     }
 

@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Update()
     {
-        textHealth.text = currentHealth + "/" + maxHealth;
+        textHealth.text = currentHealth.ToString("F1") + "/" + maxHealth;
 
         vulnerable -= Time.deltaTime;
 

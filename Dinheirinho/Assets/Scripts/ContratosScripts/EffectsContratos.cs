@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
 public class EffectsContratos : MonoBehaviour
 {
     public PlayerStats playerStats;
@@ -16,10 +19,17 @@ public class EffectsContratos : MonoBehaviour
 
     void Start()
     {
+        skillDrunk.chromatic = ScriptableObject.CreateInstance<ChromaticAberration>();
         skillHoraExtra.playerHealth.canHeal = true;
         skillHoraExtra.playerHealth.extraLife = false;
         skillDanoArea.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isArea = false;
         skillPoision.playerAim.dinheiroBullet.GetComponent<BulletDamage>().isPoision = false;
+        print(skillDrunk.chromatic);
+
+        if(skillDrunk.bebado.profile.TryGetSettings<ChromaticAberration>(out skillDrunk.chromatic))
+        {
+            skillDrunk.chromatic.intensity.value = 0.14f;
+        }
     }
 
     void Update()
@@ -49,10 +59,11 @@ public class EffectsContratos : MonoBehaviour
     {
         if (boolean[1])
         {
-            playerStats.reducedDamage = 30;
+            playerStats.reducedDamage = 80;
 
             skillDrunk.num += Random.Range(skillDrunk.MinSpeed, skillDrunk.maxSpeed) * 0.1f;
             skillDrunk.num -= Random.Range(skillDrunk.MinSpeed, skillDrunk.maxSpeed) * 0.1f;
+
 
             if (skillDrunk.num < skillDrunk.MinSpeed)
             {
@@ -64,14 +75,19 @@ public class EffectsContratos : MonoBehaviour
 
             }
 
-            playerStats.speed = Mathf.Round(skillDrunk.num);
+            skillDrunk.chromatic.intensity.value = skillDrunk.num /10;
 
-             //= skillDrunk.num;
+
+            playerStats.speed = skillDrunk.num;
+
+            //= skillDrunk.num;
 
         }
         else
         {
             playerStats.reducedDamage = 0;
+            skillDrunk.chromatic.intensity.value = 0.14f;
+
 
         }
     } 
@@ -134,6 +150,8 @@ public class EffectsContratos : MonoBehaviour
         public TextMeshProUGUI texto;
         public float num;
         public Sprite sprite;
+        public PostProcessVolume bebado;
+        public ChromaticAberration chromatic;
     }
     
     [System.Serializable]

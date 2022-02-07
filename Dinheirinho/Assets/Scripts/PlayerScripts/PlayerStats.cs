@@ -61,12 +61,12 @@ public class PlayerStats : MonoBehaviour
         if (bulletSpeed < 0.5f) bulletSpeed = 0.5f;
         if (money < 0) money = 0;
 
-        statsBar[0].text = "" + speed;
-        statsBar[1].text = "" + dano;
-        statsBar[2].text = "" + fireRate;
-        statsBar[3].text = "" + range;
-        statsBar[4].text = "" + bulletSpeed;
-        statsBar[5].text = "" + money;
+        statsBar[0].text = "" + speed.ToString("F1");
+        statsBar[1].text = "" + dano.ToString("F1");
+        statsBar[2].text = "" + fireRate.ToString("F1");
+        statsBar[3].text = "" + range.ToString("F1");
+        statsBar[4].text = "" + bulletSpeed.ToString("F1");
+        statsBar[5].text = "" + money.ToString("F1");
     }
     public void UpdateMoney()
     {
